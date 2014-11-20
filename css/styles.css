@@ -500,6 +500,14 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .service-header-info-text {padding:17px 0 0 0}
 .service-header-inner .services-top-info {display:block; float:right}
 
+.project-inside-header {padding:63px 0; background:none; background-position:center; background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
+.project-inside-header-inner {width:940px; margin:0 auto; display:table}
+.project-inside-header-logo {display:table-cell; background:#eceaea; width:240px; text-align:center; vertical-align:middle; line-height:0}
+.project-inside-header-info {display:table-cell; background:#fff; width:340px; padding:27px 30px 0 30px; text-align:left; vertical-align:top; color:#000}
+.project-inside-header-info-title {color:#838383; font-size:12px; text-transform:uppercase}
+.project-inside-header-info-name {color:#983e6f; font-size:18px; line-height:18px; font-weight:bold; text-transform:uppercase; margin:-2px 0 20px 0}
+.project-inside-header-sep {display:table-cell; width:10px}
+
 .service-descr-text {float:left; width:620px; color:#000; padding:17px 0 0 0}
 .service-descr-text h3 {font-weight:normal; color:#000; font-size:24px; line-height:24px}
 .service-descr-text ul li {background:url(../images/service-descr-li.png) no-repeat 2px 4px; padding-left:20px}
@@ -556,12 +564,17 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .page-projects .pager a.active {background:#a5477a}
 .page-articles .pager a.active {background:#65c1e3}
 
-.project-info {width:100%; color:#000; padding:56px 0 32px 0}
+.project-info {width:100%; color:#000; padding:0 0 40px 0}
 .project-info:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.project-info-left {float:left; width:620px}
-.project-info-right {float:right; width:300px}
-.project-info h2 {font-size:36px; line-height:36px; margin:0 0 18px 0; color:#983e6f}
+.project-info-left {float:left; width:620px; padding:30px 0 0 0}
+.project-info-right {float:right; width:300px; padding:33px 0 0 0}
+.project-info h3 {margin:32px 0 -16px 0; color:#983e6f}
 .project-info a {color:#a5477a}
+.project-info-text {display:table; margin:0 auto; width:200px; height:200px; background:#983e6f; position:relative; -moz-border-radius:100px; -webkit-border-radius:100px; border-radius:100px}
+.project-info-text-inner {height:200px; display:table-cell; vertical-align:middle; text-align:center; padding:0 20px; color:#ffa3d5; text-transform:uppercase}
+.project-info-text-inner strong {font-size:18px; color:#fff; display:block; padding:7px 0 0 0}
+
+.project-video h2 {margin:0; padding:52px 0 0 0; font-size:36px; line-height:36px; color:#94406e}
 
 .project-services {border-top:5px solid #a5477a; border-bottom:5px solid #a5477a; padding:51px 0 50px 0}
 .project-services h2 {font-size:36px; line-height:36px; margin:0; color:#983e6f}
