@@ -170,13 +170,15 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 
 .main-projects {background:#65c1e3; position:relative; padding:0 0 35px 0}
 .main-projects-container {width:940px; margin:0 auto; position:relative}
-.infocentre-top .main-projects-container {padding:40px 0 0 0}
 .main-projects-title {font-weight:bold; text-transform:uppercase; padding:35px 0 24px 0}
 .main-projects-title a {color:#fff}
 .main-projects-list {position:relative}
 .main-projects-item {display:none; position:relative; color:#fff}
 .main-projects-item:first-child {display:block}
+.main-projects-item-type {text-transform:uppercase; font-weight:bold; font-size:18px; line-height:18px; margin:27px 0 25px 0}
+.main-projects-item-type a {color:#fff}
 .main-projects-item-name {text-transform:uppercase; padding:0 0 17px 0; font-weight:500; font-size:24px; line-height:27px; background:url(../images/main-projects-item-title.png) repeat-x left bottom}
+.infocentre-top .main-projects-item-name {font-size:36px; line-height:36px; background-image:url(../images/main-projects-item-title-2.png)}
 .main-projects-item-task {text-transform:uppercase; font-weight:bold; padding:33px 0 0 0}
 .main-projects-item-descr {font-size:12px; padding:13px 0 0 0}
 .infocentre-top .main-projects-item-descr {padding:21px 0 0 0}
@@ -188,13 +190,17 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .main-projects-item-links {width:100%; padding:44px 0 0 0}
 .main-projects-item-links:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .main-projects-item-links a {float:left; width:220px; height:36px; margin:0 0 0 6px; text-decoration:none; text-align:center; text-transform:uppercase; font-weight:500; line-height:36px; background:#fff; color:#3f627b}
+.infocentre-top .main-projects-item-links a {color:#65c1e3}
 .main-projects-item-links a:first-child {margin:0}
-.main-projects-item-links a:hover {background:#3397bc; color:#fff}
+.main-projects-item-links a:hover {background:#c0c0c0; color:#fff}
 .main-projects-item-links a:active {background:#000; color:#fff}
+.infocentre-top .main-projects-item-links a+a {background:#77daff; color:#fff}
+.infocentre-top .main-projects-item-links a+a:hover {background:#c0c0c0; color:#fff}
+.infocentre-top .main-projects-item-links a+a:active {background:#000; color:#fff}
 .main-projects-prev,
 .main-projects-next {position:absolute; top:158px; display:block; width:53px; height:53px; background:url(../images/main-projects-arrows.png); opacity:.5}
 .infocentre-top .main-projects-prev,
-.infocentre-top .main-projects-next {top:128px}
+.infocentre-top .main-projects-next {top:50%; margin-top:-27px}
 .main-projects-prev {left:-116px}
 .main-projects-next {right:-116px; background-position:-53px top}
 .main-projects-prev:hover,
@@ -215,7 +221,8 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .infocentre-media .main-other-title-text {font-size:36px; color:#65c1e3; padding:0 20px 0 0}
 .main-other-title a {float:left; width:39px; height:39px; text-align:center; font-size:12px; position:relative; color:#fff; background:#fc4c02; -moz-border-radius:19px; -webkit-border-radius:19px; border-radius:19px}
 .infocentre-list .main-other-title a,
-.infocentre-media .main-other-title a {background:#65c1e3}
+.infocentre-media .main-other-title a {background:#77daff}
+.page-articles .content .main-other-title a {color:#fff}
 
 .main-news {float:left; width:380px}
 .infocentre-list .main-news+.main-news {float:right}
@@ -225,7 +232,7 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .infocentre-list .main-news-item {border-color:#e3ecef; padding:20px 20px 28px 0}
 .main-news-item:first-child {border:none}
 .main-news-item-name {text-transform:uppercase}
-.infocentre-list .main-news-item-name {font-weight:bold}
+.infocentre-list .main-news-item-name {font-weight:bold; font-size:18px}
 .main-news-item-name a {text-decoration:none}
 .infocentre-list .main-news-item-name a {color:#65c1e3}
 .main-news-item-name a:hover {color:#000}
@@ -309,7 +316,9 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .content table p {margin:0; padding:0}
 .content hr {margin:18px 0; padding:0; height:1px; background:#f7f7f7; outline:none; display:block; position:relative; overflow:hidden; width:100%; font-size:0; line-height:0; border:none}
 
-.page-articles .content a {color:#65c1e3}
+.page-articles .content a,
+.page-articles .content h3 {color:#65c1e3}
+.content-news h2 {font-weight:normal; line-height:24px}
 
 .text-old {color:#898989; text-decoration:line-through}
 
@@ -390,6 +399,14 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .page-job .services-title h1 {color:#e16262}
 
 .articles-archive-select {float:right; text-transform:uppercase; padding:18px 0 0 24px; position:relative}
+.articles-archive-select-open {z-index:9999}
+.articles-archive-select-list {position:absolute; left:-9999px; top:-9999px; padding:36px 0 0 0; font-size:12px; line-height:24px; white-space:nowrap; text-transform:uppercase; min-width:100%; background:#fff; -webkit-box-shadow:0 0 10px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 10px rgba(101, 193, 227, .75); box-shadow:0 0 10px rgba(101, 193, 227, .75)}
+.articles-archive-select-open .articles-archive-select-list {left:14px; top:8px}
+.articles-archive-select-list ul {margin:0 1px; padding:6px 1px 1px 1px; list-style:none; border-top:1px solid #d8eff8}
+.articles-archive-select-list ul li {margin:0; padding:0; background:none}
+.page-articles .articles-archive-select-list ul li a {display:block; position:relative; padding:0 9px; text-decoration:none; color:#808080}
+.page-articles .articles-archive-select-list ul li a:hover {background:#e0f3f9; color:#000}
+.page-articles .articles-archive-select-list ul li.active a {background:#65c1e3; color:#fff}
 .articles-archive-select-value {cursor:pointer; position:relative}
 .articles-archive-select-value span {color:#000; background:url(../images/dots-2.png) repeat-x left bottom}
 .articles-archive-select-value:hover span {background:none}
@@ -507,6 +524,9 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .service-projects-item {position:relative; display:inline-block; vertical-align:top; background:#fff; width:260px; padding:19px 20px 34px 20px; margin:19px 10px 0 10px}
 .project-list .service-projects-item {-webkit-box-shadow:0 0 5px rgba(165, 71, 122, .75); -moz-box-shadow:0 0 5px rgba(165, 71, 122, .75); box-shadow:0 0 5px rgba(165, 71, 122, .75)}
 .articles-list .service-projects-item {padding-bottom:25px; -webkit-box-shadow:0 0 5px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 5px rgba(101, 193, 227, .75); box-shadow:0 0 5px rgba(101, 193, 227, .75)}
+.service-projects-item:hover {padding:16px 17px 31px 17px; border:3px solid #65459b}
+.project-list .service-projects-item:hover {border-color:#a5477a}
+.articles-list .service-projects-item:hover {padding-bottom:22px; border-color:#65c1e3}
 .service-projects-item-name {text-transform:uppercase; font-weight:bold; font-size:18px; line-height:18px; letter-spacing:0; padding:27px 11px 2px 11px}
 .service-projects-item-name a {color:#65459b; text-decoration:none}
 .project-list .service-projects-item-name a {color:#a5477a}
@@ -515,8 +535,12 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .service-projects-item-title {text-transform:uppercase; color:#838383; font-size:12px; line-height:18px; letter-spacing:0; padding:18px 11px 0 11px}
 .service-projects-item-text {color:#000; font-size:12px; line-height:18px; letter-spacing:0; padding:0 11px}
 .articles-list .service-projects-item-text {padding-top:19px}
-.service-projects-item-tags {color:#c0c0c0; font-size:12px; line-height:18px; letter-spacing:0; padding:18px 11px 0 11px}
-.service-projects-item-tags a {color:#c0c0c0}
+.service-projects-item-tags {color:#808080; font-size:12px; line-height:18px; letter-spacing:0; padding:18px 11px 0 11px}
+.content .service-projects-item-tags a {color:#808080}
+.service-projects-item-current {position:absolute; left:50%; top:-11px; width:110px; height:20px; margin:0 0 0 -55px; letter-spacing:0; background:#65459b; color:#fff; text-align:center; font-size:10px; line-height:20px; text-transform:uppercase}
+.service-projects-item:hover .service-projects-item-current {top:-14px}
+.project-list .service-projects-item-current {background:#a5477a}
+.articles-list .service-projects-item-current {background:#65c1e3}
 
 .content-inner .content {width:100%}
 
@@ -566,21 +590,23 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .project-news-ctrl a:active {border-color:#000}
 .project-news-ctrl a.active {background:#a5477a; border-color:#a5477a}
 
-.infocentre-top {background:#65c1e3; color:#fff; position:relative; margin:-17px 0 0 0; padding:16px 0 18px 0}
+.infocentre-top {background:#65c1e3; color:#fff; position:relative; padding:16px 0 18px 0}
 .infocentre-top h1 {font-size:72px; line-height:72px; color:#fff; margin:12px 0 0 0}
 
 .infocentre-list {background:#eff9fc; padding:35px 0 0 0}
 
-.infocentre-media {padding:35px 0 0 0}
+.infocentre-media {padding:35px 0 45px 0}
 .infocentre-media-video {float:left; width:380px}
 .infocentre-video-preview {line-height:0}
 .infocentre-video-preview a {display:block; position:relative}
 .infocentre-video-preview a span {display:block; width:90px; height:90px; position:absolute; left:50%; top:50%; margin:-45px 0 0 -45px; background:url(../images/video.png)}
-.infocentre-media-video .main-other-title {padding:0 0 36px 0}
-.infocentre-video-name {font-size:14px; line-height:18px; font-weight:bold; text-transform:uppercase; letter-spacing:0; padding:19px 0 0 0}
+.infocentre-media .main-other-title {padding:0 0 36px 0}
+.infocentre-video-name {font-size:18px; line-height:18px; font-weight:bold; text-transform:uppercase; letter-spacing:0; padding:19px 0 0 0}
 .infocentre-video-name a {color:#65c1e3; text-decoration:none}
 .infocentre-video-name a:hover {color:#000}
 .infocentre-video-anonce {color:#393939; padding:9px 0 0 0; font-size:14px; line-height:18px; letter-spacing:0}
+.infocentre-video-tags {font-size:14px; line-height:18px; padding:18px 0 0 0; letter-spacing:0; color:#808080}
+.infocentre-video-tags a {color:#808080 !important}
 
 .infocentre-biblio {border-top:5px solid #65c1e3; border-bottom:5px solid #65c1e3; padding:51px 0 53px 0}
 .biblio-headers {width:100%}
@@ -597,7 +623,10 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .biblio-item-name {padding:22px 11px 0 11px; font-weight:bold; font-size:14px; line-height:18px; text-transform:uppercase; letter-spacing:0}
 .biblio-item-name a {color:#65c1e3; text-decoration:none}
 .biblio-item-name a:hover {color:#000}
+.biblio-item-author {font-size:14px; line-height:18px; letter-spacing:0; color:#65c1e3; padding:9px 11px 0 11px}
 .biblio-item-anonce {padding:18px 11px 0 11px; font-size:14px; line-height:18px; letter-spacing:0}
+.biblio-item-review {font-size:14px; line-height:18px; letter-spacing:0; color:#b2dcec; padding:18px 11px 0 11px}
+.biblio-item-review a {color:#65c1e3}
 
 .infocentre-blog {padding:51px 0 0 0}
 .infocentre-blog h2 {color:#65c1e3; font-size:36px; line-height:36px; margin:0}
@@ -609,7 +638,8 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .blog-item-name a {color:#65c1e3; text-decoration:none}
 .blog-item-name a:hover {color:#000}
 .blog-item-anonce {color:#000; padding:18px 11px 0 11px}
-.blog-item-date {color:#8d8d8d; padding:9px 11px 0 11px}
+.blog-item-date {color:#8d8d8d; padding:18px 11px 0 11px}
+.blog-item-date a {color:#8d8d8d !important}
 
 .video-list-inner {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:-17px -10px 38px -10px}
 .video-item {display:inline-block; vertical-align:top; margin:44px 10px 0 10px; width:300px; font-size:14px; line-height:18px; letter-spacing:0}
@@ -735,6 +765,8 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .trainers-sort ul li a {float:left; text-decoration:none; position:relative; height:34px; padding:0 19px; border:1px solid #fc4c02; -moz-border-radius:17px; -webkit-border-radius:17px; border-radius:17px}
 .trainers-sort ul li a:hover {color:#000}
 .trainers-sort ul li.active a {color:#fff; background:#fc4c02}
+.trainers-side {float:right; width:300px}
+.trainers-social {text-align:center; padding:38px 0 0 0; margin:0 0 -4px 0}
 .trainers-welcome {float:right; width:260px; margin:30px 0 0 0; color:#000; padding:0 20px 26px 20px; background:#f6f6f6; position:relative; -moz-border-radius:13px; -webkit-border-radius:13px; border-radius:13px}
 .trainers-welcome-title {text-transform:uppercase; font-size:18px; line-height:18px; font-weight:500; padding:27px 0 0 0}
 .trainers-welcome-text {line-height:14px}
@@ -758,6 +790,19 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .trainer-item-name a {text-decoration:none}
 .trainer-item-name a:hover {color:#000}
 .trainer-item-text {padding:9px 0 0 0}
+
+.tags {border-top:5px solid #fc4c02; line-height:36px; width:940px; margin:5px auto 0 auto; padding:45px 0 50px 0}
+.tags h2 {font-size:36px; line-height:36px; margin:0; text-transform:uppercase; padding:13px 0 23px 0}
+.page-articles .tags {border-color:#65c1e3}
+.page-articles .tags h2 {color:#65c1e3}
+.tags a {text-decoration:none; white-space:nowrap}
+.page-articles .tags a {color:#65c1e3}
+.tags a:hover {color:#000}
+.tags-size-1 {font-size:24px}
+.tags-size-2 {font-size:18px}
+.tags-size-3 {font-size:30px}
+.tags-size-4 {font-size:12px}
+.tags-size-5 {font-size:36px}
 
 footer {background:#f8f8f8}
 .footer-inner {width:940px; margin:0 auto; padding:36px 0 46px 0}

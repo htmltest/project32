@@ -32,4 +32,5 @@ nav ul li:first-child a,
 .trainers-welcome,
 .trainers-welcome-link a,
 .trainers-welcome-photo img,
-.project-news-ctrl a {behavior:url(./js/PIE.htc)}
+.project-news-ctrl a,
+.articles-archive-select-list {behavior:url(./js/PIE.htc)}

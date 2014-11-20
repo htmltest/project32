@@ -310,6 +310,23 @@ var timerSlider     = null;
             e.preventDefault();
         });
 
+        // архив
+        $('.articles-archive-select-value').click(function() {
+            var curSelect = $(this).parents().filter('.articles-archive-select');
+            if (curSelect.hasClass('articles-archive-select-open')) {
+                curSelect.removeClass('articles-archive-select-open');
+            } else {
+                $('.articles-archive-select-open').removeClass('articles-archive-select-open');
+                curSelect.addClass('articles-archive-select-open');
+            }
+        });
+
+        $(document).click(function(e) {
+            if ($(e.target).parents().filter('.articles-archive-select').length == 0) {
+                $('.articles-archive-select-open').removeClass('articles-archive-select-open');
+            }
+        });
+
     });
 
     $(window).load(function() {
