@@ -444,6 +444,21 @@ var timerSlider     = null;
             }
         });
 
+        $('.video-preview a, .video-name a').fancybox({
+            padding : 20,
+            helpers : {
+                media : true,
+                title : {
+                    type : 'inside'
+                }
+            },
+            tpl : {
+                closeBtn : '<a title="Закрыть" class="fancybox-item fancybox-close" href="javascript:;"></a>',
+                next     : '<a title="Следующая" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
+                prev     : '<a title="Предыдущая" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
+            }
+        });
+
     });
 
 })(jQuery);
