@@ -168,6 +168,21 @@ var timerSlider     = null;
             e.preventDefault();
         });
 
+        $('.main-partners-content li a').click(function(e) {
+            var curItem = $(this).parent();
+
+            $('.main-partners-icon img').attr('src', curItem.find('img').attr('src'));
+            $('.main-partners-text').html(curItem.find('.main-partners-detail').html());
+
+            e.preventDefault();
+        });
+
+        $('.main-study-title a').click(function(e) {
+            $('.main-study-content').slideToggle();
+
+            e.preventDefault();
+        });
+
         // проекты на главной
         $('.main-projects').each(function() {
             var curSlider = $(this);

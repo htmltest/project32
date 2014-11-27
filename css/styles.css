@@ -189,18 +189,14 @@ a.btn:active {background:#000}
 .main-services-col a:hover .main-services-icon div.main-services-icon-9 {background-position:-368px -46px}
 .main-services-name {display:table-cell; width:210px; vertical-align:middle}
 
-.main-games {background:#65459b; position:relative}
-.main-games-inner {width:480px; margin:0 auto}
-.main-games-inner:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.main-games-container {float:left; width:100%}
-.main-games-icon {position:relative; margin:-67px 0 0 0}
-.main-games-icon a {display:table; position:relative; text-decoration:none; width:126px; height:126px; margin:0 auto; color:#737373; background:#fff; border:10px solid #ccc; -moz-border-radius:73px; -webkit-border-radius:73px; border-radius:73px}
-.main-games-icon a:hover {color:#000}
-.main-games-icon a span {display:table-cell; height:126px; font-style:normal; font-size:18px; line-height:21px; font-weight:500; text-transform:uppercase; text-align:center; vertical-align:middle}
-.main-games-text {font-weight:bold; text-transform:uppercase; text-align:center; color:#fff; padding:10px 0 30px 0; background:url(../images/main-games-text.png) repeat-x left bottom}
-
-.main-partners {background:#65459b; padding:37px 0 46px 0}
-.main-partners-title {font-size:24px; line-height:27px; text-transform:uppercase; font-weight:bold; color:#fff; text-align:center; padding:0 0 33px 0}
+.main-partners {background:#65459b; padding:0 0 46px 0; position:relative}
+.main-partners-top {width:480px; margin:0 auto}
+.main-partners-top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.main-partners-top-inner {float:left; width:100%}
+.main-partners-icon {position:relative; margin:-67px 0 0 0; line-height:0; text-align:center}
+.main-partners-icon img {position:relative; border:3px solid #9d6fea; -moz-border-radius:73px; -webkit-border-radius:73px; border-radius:73px}
+.main-partners-text {font-weight:bold; text-transform:uppercase; text-align:center; color:#fff; padding:19px 0 12px 0; min-height:72px; background:url(../images/main-games-text.png) repeat-x left bottom}
+.main-partners-title {font-size:36px; line-height:36px; text-transform:uppercase; font-weight:bold; color:#fff; text-align:center; padding:37px 0 33px 0}
 .main-partners-list {width:940px; margin:0 auto; position:relative}
 .main-partners-content {width:100%; position:relative; overflow:hidden; line-height:0}
 .main-partners-content ul {margin:0; padding:0; list-style:none; position:relative; width:9999px}
@@ -212,14 +208,21 @@ a.btn:active {background:#000}
 .main-partners-content ul li a img {position:relative; -moz-border-radius:70px; -webkit-border-radius:70px; border-radius:70px}
 .main-partners-content ul li a .BWfade {z-index:1}
 .main-partners-prev,
-.main-partners-next {display:block; width:53px; height:53px; position:absolute; top:44px; background:url(../images/main-partners-arrows.png)}
+.main-partners-next {display:block; width:53px; height:53px; position:absolute; top:50%; margin-top:-27px; background:url(../images/main-arrows.png)}
 .main-partners-prev {left:-116px}
 .main-partners-prev:hover {background-position:left -53px}
 .main-partners-next {right:-116px; background-position:-53px top}
 .main-partners-next:hover {background-position:-53px -53px}
-.about-partners .main-partners-prev,
-.about-partners .main-partners-next {background-image:url(../images/about-partners-arrows.png)}
+.main-partners-detail {display:none}
 
+.main-study {position:relative; background:url(../images/main-study-bg.jpg) no-repeat center top}
+.main-study-title {text-align:center; font-size:36px; line-height:36px; text-transform:uppercase; font-weight:bold; padding:33px 0 0 0}
+.main-study-title a {color:#fff; text-decoration:none; background:url(../images/dots-1.png) repeat-x left bottom}
+.main-study-title a:hover {background:none}
+.main-study-arrow {text-align:center; line-height:0; padding:6px 0 26px 0}
+.main-study-content {display:none; color:#fff; padding:0 0 18px 0}
+.main-study-content a {color:#fff}
+.main-study-content h3 {color:#fff}
 
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
@@ -379,12 +382,6 @@ footer {background:#f8f8f8; color:#000}
 
 
 /*  ------------------------------------------- */
-
-.main-study {position:relative; background:url(../images/main-study-bg.jpg); background-position:center; background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
-.main-study-title {text-align:center; font-size:24px; line-height:27px; text-transform:uppercase; font-weight:bold; padding:42px 0 0 0}
-.main-study-title a {color:#fff; text-decoration:none; background:url(../images/dots-1.png) repeat-x left bottom}
-.main-study-title a:hover {background:none}
-.main-study-arrow {text-align:center; line-height:0; padding:6px 0 26px 0}
 
 .main-projects {background:#65c1e3; position:relative; padding:0 0 35px 0}
 .main-projects-container {width:940px; margin:0 auto; position:relative}
