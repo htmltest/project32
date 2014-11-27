@@ -329,6 +329,30 @@ var timerSlider     = null;
 
     });
 
+    $(window).bind('load resize', function() {
+        $('.info-block-bg').each(function() {
+            var curImg   = $(this);
+            var curBlock = curImg.parent();
+
+            var blockWidth  = curBlock.width();
+            var blockHeight = curBlock.height();
+
+            curImg.css({'width': 'auto', 'height': 'auto'});
+            var curWidth  = curImg.width();
+            var curHeight = curImg.height();
+
+            var newWidth = blockWidth;
+            var newHeight = newWidth / curWidth * curHeight;
+
+            if (newHeight < blockHeight) {
+                newHeight = blockHeight;
+                newWidth = newHeight / curHeight * curWidth;
+            }
+
+            curImg.css({'width': newWidth, 'height': newHeight, 'margin-left': -(newWidth / 2) + 'px', 'margin-top': -(newHeight / 2) + 'px', 'visibility': 'visible'});
+        });
+    });
+
     $(window).load(function() {
 
         $('.leaders-list').each(function() {
@@ -403,15 +427,15 @@ var timerSlider     = null;
             });
         });
 
-        $('.practice-hits').each(function() {
+        $('.top-sale').each(function() {
             var curBlock = $(this);
 
-            curBlock.find('.practice-hit').css({'min-height': 0});
-            curBlock.find('.practice-hit:nth-child(3n)').each(function() {
+            curBlock.find('.top-sale-item').css({'min-height': 0});
+            curBlock.find('.top-sale-item:nth-child(3n)').each(function() {
                 var curItem   = $(this);
-                var curIndex  = curBlock.find('.practice-hit').index(curItem);
-                var prevItem  = curBlock.find('.practice-hit').eq(curIndex - 1);
-                var firstItem = curBlock.find('.practice-hit').eq(curIndex - 2);
+                var curIndex  = curBlock.find('.top-sale-item').index(curItem);
+                var prevItem  = curBlock.find('.top-sale-item').eq(curIndex - 1);
+                var firstItem = curBlock.find('.top-sale-item').eq(curIndex - 2);
 
                 var curHeight = curItem.height();
 
@@ -428,10 +452,10 @@ var timerSlider     = null;
                 firstItem.css({'min-height': curHeight});
             });
 
-            if (curBlock.find('.practice-hit').length % 3 == 2) {
-                var curItem   = curBlock.find('.practice-hit:last');
-                var curIndex  = curBlock.find('.practice-hit').index(curItem);
-                var prevItem  = curBlock.find('.practice-hit').eq(curIndex - 1);
+            if (curBlock.find('.top-sale-item').length % 3 == 2) {
+                var curItem   = curBlock.find('.top-sale-item:last');
+                var curIndex  = curBlock.find('.top-sale-item').index(curItem);
+                var prevItem  = curBlock.find('.top-sale-item').eq(curIndex - 1);
 
                 var curHeight = curItem.height();
 
