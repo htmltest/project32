@@ -1,11 +1,7 @@
 .header-lang span,
-.main-partners-content ul li a div,
-.main-projects-prev,
-.main-projects-next {filter:alpha(opacity=50)}
+.main-partners-content ul li a div {filter:alpha(opacity=50)}
 
-.main-partners-content ul li a:hover div,
-.main-projects-prev:hover,
-.main-projects-next:hover {filter:alpha(opacity=100)}
+.main-partners-content ul li a:hover div {filter:alpha(opacity=100)}
 
 .top,
 nav ul li:first-child a,
@@ -18,9 +14,8 @@ nav ul li:first-child a,
 .main-partners-icon img,
 .main-partners-content ul li a,
 .main-partners-content ul li a img,
-
 .main-other-title a,
-.main-photo-item-list div img,
+
 .leaders-item,
 .project-list .service-projects-item,
 .pager a ,
