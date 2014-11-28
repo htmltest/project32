@@ -400,18 +400,27 @@ footer {background:#f8f8f8; color:#000}
 .page-articles .content-gallery-next:hover {background-color:#42abd9}
 .page-articles .content-gallery-next:active {background-color:#1993ce}
 .page-articles table th {background:#65c1e3}
-.page-articles.top {background:#65c1e3}
+.page-articles .top {background:#65c1e3}
 .page-articles nav ul li {border-color:#8cd1ea}
 .page-articles nav ul li a {color:#fff}
 .page-articles nav ul li a:hover,
 .page-articles nav ul li.active a {background:#fff; color:#65c1e3}
-.page-articles.breadcrumbs span {background:#b2e0f1}
-.page-articles.tags {border-color:#65c1e3}
+.page-articles .breadcrumbs span {background:#b2e0f1}
+.page-articles .tags {border-color:#65c1e3}
 .page-articles .tags h2 {color:#65c1e3}
-.page-articles.pager a {color:#fff}
-.page-articles.pager a:hover {color:#fff; background:#42abd9}
-.page-articles.pager a:active {color:#fff; background:#1993ce}
-.page-articles.pager a.active {color:#fff; background:#65c1e3}
+.page-articles .pager a {color:#fff}
+.page-articles .pager a:hover {color:#fff; background:#42abd9}
+.page-articles .pager a:active {color:#fff; background:#1993ce}
+.page-articles .pager a.active {color:#fff; background:#65c1e3}
+.page-articles header a,
+.page-articles .bottom a,
+.page-articles footer a {color:#fc4c02; outline:none}
+.page-articles header a:hover,
+.page-articles .bottom a:hover,
+.page-articles footer a:hover {color:#c0c0c0}
+.page-articles header a:active,
+.page-articles .bottom a:active,
+.page-articles footer a:active {color:#000}
 
 .page-about a {color:#e26362}
 .page-about a:hover {color:#d84040}
