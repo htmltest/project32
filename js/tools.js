@@ -381,15 +381,15 @@ var timerSlider     = null;
             curBlock.find('.leaders-item').css({'min-height': curHeight});
         });
 
-        $('.service-projects-list').each(function() {
+        $('.articles-list').each(function() {
             var curBlock = $(this);
 
-            curBlock.find('.service-projects-item').css({'min-height': 0});
-            curBlock.find('.service-projects-item:nth-child(3n)').each(function() {
+            curBlock.find('.articles-item').css({'min-height': 0});
+            curBlock.find('.articles-item:nth-child(3n)').each(function() {
                 var curItem   = $(this);
-                var curIndex  = curBlock.find('.service-projects-item').index(curItem);
-                var prevItem  = curBlock.find('.service-projects-item').eq(curIndex - 1);
-                var firstItem = curBlock.find('.service-projects-item').eq(curIndex - 2);
+                var curIndex  = curBlock.find('.articles-item').index(curItem);
+                var prevItem  = curBlock.find('.articles-item').eq(curIndex - 1);
+                var firstItem = curBlock.find('.articles-item').eq(curIndex - 2);
 
                 var curHeight = curItem.height();
 
@@ -406,10 +406,10 @@ var timerSlider     = null;
                 firstItem.css({'min-height': curHeight});
             });
 
-            if (curBlock.find('.service-projects-item').length % 3 == 2) {
-                var curItem   = curBlock.find('.service-projects-item:last');
-                var curIndex  = curBlock.find('.service-projects-item').index(curItem);
-                var prevItem  = curBlock.find('.service-projects-item').eq(curIndex - 1);
+            if (curBlock.find('.articles-item').length % 3 == 2) {
+                var curItem   = curBlock.find('.articles-item:last');
+                var curIndex  = curBlock.find('.articles-item').index(curItem);
+                var prevItem  = curBlock.find('.articles-item').eq(curIndex - 1);
 
                 var curHeight = curItem.height();
 

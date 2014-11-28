@@ -54,7 +54,7 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 .top-search-submit input {vertical-align:top; width:12px; height:10px; border:none; background:url(../images/top-search.png); margin:0; padding:0; outline:none; cursor:pointer; -webkit-appearance:none}
 .top-search-submit input:hover {background-position:left -10px}
 
-.breadcrumbs {max-width:940px; margin:0 auto; font-size:12px; padding:18px 30px 0 30px; position:relative}
+.breadcrumbs {max-width:940px; margin:0 auto; font-size:12px; padding:18px 30px 0 30px; position:relative; color:#000}
 .breadcrumbs span {display:inline-block; vertical-align:middle; width:12px; height:10px; margin:0 3px; padding:6px 0 0 4px; position:relative; background:#ccc; line-height:0; text-align:left; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px}
 .breadcrumbs span img {vertical-align:top}
 
@@ -99,10 +99,13 @@ a.btn:hover {background:#c0c0c0}
 a.btn:active {background:#000}
 
 .article-tags {margin:20px 0 10px 0}
+.article-social {float:right}
 
 .info-block {width:100%; margin:26px 0 35px 0; padding:64px 0; position:relative; overflow:hidden}
+.content .info-block {margin-left:-10px; width:960px}
 .info-block-bg {position:absolute; visibility:hidden; left:50%; top:50%}
 .info-block-text {position:relative; width:900px; margin:0 auto; background:#fff; font-size:24px; font-weight:500; line-height:27px; padding:1px 30px 7px 30px; color:#000}
+.content .info-block-text {width:780px}
 .info-block-text p {margin:27px 0}
 
 .top-sale {position:relative; margin:0 -10px 0 -10px; font-size:0; line-height:0; letter-spacing:-1px; color:#000}
@@ -117,7 +120,7 @@ a.btn:active {background:#000}
 .top-sale-item-link a.btn {margin:0 30px; height:44px; line-height:44px}
 .top-sale-item:hover .top-sale-item-link a.btn {margin:0 27px}
 
-.content-gallery {margin:40px 0 89px 0; position:relative; line-height:0; width:940px}
+.content-gallery {margin:40px 0; position:relative; line-height:0; width:940px}
 .content-gallery ul {margin:0; padding:0; list-style:none; position:relative}
 .content-gallery ul li {display:none; margin:0; padding:0; background:none}
 .content-gallery ul li:first-child {display:block}
@@ -287,6 +290,50 @@ a.btn:active {background:#000}
 .main-col:first-child {float:left}
 .main-col p {margin:0; padding:0 0 18px 0}
 
+.articles-archive-select {float:right; text-transform:uppercase; padding:18px 0 0 24px; position:relative}
+.articles-archive-select-open {z-index:9999}
+.articles-archive-select-list {position:absolute; left:-9999px; top:-9999px; padding:36px 0 0 0; font-size:12px; line-height:24px; white-space:nowrap; text-transform:uppercase; min-width:100%; background:#fff; -webkit-box-shadow:0 0 10px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 10px rgba(101, 193, 227, .75); box-shadow:0 0 10px rgba(101, 193, 227, .75)}
+.articles-archive-select-open .articles-archive-select-list {left:14px; top:8px}
+.articles-archive-select-list ul {margin:0 1px; padding:6px 1px 1px 1px; list-style:none; border-top:1px solid #d8eff8}
+.articles-archive-select-list ul li {margin:0; padding:0; background:none}
+.articles-archive-select-list ul li:after {display:none}
+.articles-archive-select-list ul li a {display:block; position:relative; padding:0 9px; text-decoration:none; color:#808080}
+.articles-archive-select-list ul li a:hover {background:#e0f3f9; color:#000}
+.articles-archive-select-list ul li.active a {background:#65c1e3; color:#fff}
+.articles-archive-select-value {cursor:pointer; position:relative}
+.articles-archive-select-value span {color:#000; background:url(../images/dots-2.png) repeat-x left bottom}
+.articles-archive-select-value:hover span {background:none}
+.articles-archive-select-value small {display:inline-block; margin:0 0 0 1px; vertical-align:middle; width:0; height:0; border-top:6px solid #65c1e3; border-left:4px solid transparent; border-right:4px solid transparent}
+.articles-archive-title {float:right; text-transform:uppercase; font-weight:bold; color:#65c1e3; padding:18px 0 0 0}
+.articles-archive-title img {vertical-align:middle; margin:0 0 0 3px}
+
+.articles-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:-10px -10px 0 -10px}
+.articles-item {position:relative; display:inline-block; vertical-align:top; background:#fff; width:260px; font-size:14px; line-height:18px; letter-spacing:0; padding:19px 20px 25px 20px; margin:19px 10px 0 10px; -webkit-box-shadow:0 0 5px rgba(252, 76, 2, .75); -moz-box-shadow:0 0 5px rgba(252, 76, 2, .75); box-shadow:0 0 5px rgba(252, 76, 2, .75)}
+.articles-item:hover {border:3px solid #fc4c02; padding:16px 17px 22px 17px}
+.articles-item-img {line-height:0}
+.articles-item-name {font-size:18px; font-weight:bold; padding:27px 11px 0 11px; text-transform:uppercase}
+.articles-item-name a {text-decoration:none}
+.articles-item-text {color:#000; padding:21px 11px 0 11px; font-size:12px}
+.articles-item-tags {font-size:12px; color:#808080; padding:18px 11px 0 11px}
+
+.pager {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:40px 0 53px 0}
+.pager a {display:inline-block; vertical-align:middle; margin:0 0 0 3px; position:relative; width:28px; height:28px; background:#c0c0c0; color:#fff; text-align:center; line-height:28px; font-size:12px; letter-spacing:0; text-decoration:none; -moz-border-radius:14px; -webkit-border-radius:14px; border-radius:14px}
+.pager a:first-child {margin:0}
+.pager a:hover {background:#000}
+.pager a.active {background:#000}
+.pager span {display:inline-block; width:16px; height:4px; background:url(../images/pager-sep.png); vertical-align:middle; margin:0 6px 0 9px}
+
+.tags {border-top:5px solid #fc4c02; line-height:36px; width:940px; margin:5px auto 0 auto; padding:45px 0 50px 0}
+.tags h2 {font-size:36px; line-height:36px; margin:0; text-transform:uppercase; padding:13px 0 23px 0}
+.tags a {text-decoration:none; white-space:nowrap}
+.tags-size-1 {font-size:24px}
+.tags-size-2 {font-size:18px}
+.tags-size-3 {font-size:30px}
+.tags-size-4 {font-size:12px}
+.tags-size-5 {font-size:36px}
+
+.content-inner {width:780px; margin:0 auto}
+
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
 .service-projects+.bottom,
@@ -342,8 +389,10 @@ footer {background:#f8f8f8; color:#000}
 .page-articles hr {background:#65c1e3}
 .page-articles ul li:after {background-color:#65c1e3}
 .page-articles ul li ul li:after {border-color:#65c1e3}
-.page-articles .top-sale-item {-webkit-box-shadow:0 0 5px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 5px rgba(101, 193, 227, .75); box-shadow:0 0 5px rgba(101, 193, 227, .75)}
-.page-articles .top-sale-item:hover {border-color:#65c1e3}
+.page-articles .top-sale-item,
+.page-articles .articles-item {-webkit-box-shadow:0 0 5px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 5px rgba(101, 193, 227, .75); box-shadow:0 0 5px rgba(101, 193, 227, .75)}
+.page-articles .top-sale-item:hover,
+.page-articles .articles-item:hover {border-color:#65c1e3}
 .page-articles .content-gallery-prev,
 .page-articles .content-gallery-next {background-color:#65c1e3}
 .page-articles .content-gallery-prev:hover {background-color:#42abd9}
@@ -351,6 +400,18 @@ footer {background:#f8f8f8; color:#000}
 .page-articles .content-gallery-next:hover {background-color:#42abd9}
 .page-articles .content-gallery-next:active {background-color:#1993ce}
 .page-articles table th {background:#65c1e3}
+.page-articles.top {background:#65c1e3}
+.page-articles nav ul li {border-color:#8cd1ea}
+.page-articles nav ul li a {color:#fff}
+.page-articles nav ul li a:hover,
+.page-articles nav ul li.active a {background:#fff; color:#65c1e3}
+.page-articles.breadcrumbs span {background:#b2e0f1}
+.page-articles.tags {border-color:#65c1e3}
+.page-articles .tags h2 {color:#65c1e3}
+.page-articles.pager a {color:#fff}
+.page-articles.pager a:hover {color:#fff; background:#42abd9}
+.page-articles.pager a:active {color:#fff; background:#1993ce}
+.page-articles.pager a.active {color:#fff; background:#65c1e3}
 
 .page-about a {color:#e26362}
 .page-about a:hover {color:#d84040}
@@ -440,6 +501,8 @@ footer {background:#f8f8f8; color:#000}
 .content-want {position:relative; margin:54px -10px 0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
 .content-want-item {display:inline-block; width:300px; margin:0 10px; font-size:14px; line-height:18px; letter-spacing:0}
 
+.articles-item-tags a {color:#808080}
+
 
 
 
@@ -451,9 +514,6 @@ footer {background:#f8f8f8; color:#000}
 .main-projects-item-option-date {display:inline-block; padding:0 39px 0 23px; background:url(../images/main-projects-item-option-1.png) no-repeat left center}
 .main-projects-item-option-time {display:inline-block; padding:0 43px 0 23px; background:url(../images/main-projects-item-option-2.png) no-repeat left center}
 .main-projects-item-option-place {display:inline-block; padding:0 0 0 17px; background:url(../images/main-projects-item-option-3.png) no-repeat left center}
-
-.page-services .breadcrumbs span {background:#b2a2cd}
-.page-services .breadcrumbs a {color:#65459b}
 
 .page-projects .breadcrumbs span {background:#d2a3bc}
 .page-projects .breadcrumbs a {color:#a5477a}
@@ -472,8 +532,6 @@ footer {background:#f8f8f8; color:#000}
 .content-news h2 {font-weight:normal; line-height:24px}
 
 
-.content-inner {width:780px; margin:0 auto}
-
 .page-404 {width:940px; margin:15px auto 79px auto; min-height:435px; background:url(../images/404.png) no-repeat center top}
 .page-404-title {text-align:center; font-weight:bold; font-size:24px; line-height:27px; padding:87px 0 0 0}
 .page-404-text {text-align:center; font-size:18px; line-height:27px; padding:2px 0 33px 0}
@@ -484,29 +542,6 @@ footer {background:#f8f8f8; color:#000}
 .page-404-item-name a {text-decoration:none}
 .page-404-item-name a:hover {color:#000}
 .page-404-item-anonce {padding:9px 0 0 0}
-
-.services-title {padding:20px 0 28px 0}
-.services-title h1 {margin:0; font-weight:bold; font-size:54px; line-height:54px; text-transform:uppercase}
-.page-services .services-title h1 {color:#65459b}
-.page-projects .services-title h1 {color:#a5477a}
-.page-articles .services-title h1 {color:#65c1e3}
-.page-job .services-title h1 {color:#e16262}
-
-.articles-archive-select {float:right; text-transform:uppercase; padding:18px 0 0 24px; position:relative}
-.articles-archive-select-open {z-index:9999}
-.articles-archive-select-list {position:absolute; left:-9999px; top:-9999px; padding:36px 0 0 0; font-size:12px; line-height:24px; white-space:nowrap; text-transform:uppercase; min-width:100%; background:#fff; -webkit-box-shadow:0 0 10px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 10px rgba(101, 193, 227, .75); box-shadow:0 0 10px rgba(101, 193, 227, .75)}
-.articles-archive-select-open .articles-archive-select-list {left:14px; top:8px}
-.articles-archive-select-list ul {margin:0 1px; padding:6px 1px 1px 1px; list-style:none; border-top:1px solid #d8eff8}
-.articles-archive-select-list ul li {margin:0; padding:0; background:none}
-.page-articles .articles-archive-select-list ul li a {display:block; position:relative; padding:0 9px; text-decoration:none; color:#808080}
-.page-articles .articles-archive-select-list ul li a:hover {background:#e0f3f9; color:#000}
-.page-articles .articles-archive-select-list ul li.active a {background:#65c1e3; color:#fff}
-.articles-archive-select-value {cursor:pointer; position:relative}
-.articles-archive-select-value span {color:#000; background:url(../images/dots-2.png) repeat-x left bottom}
-.articles-archive-select-value:hover span {background:none}
-.articles-archive-select-value small {display:inline-block; margin:0 0 0 1px; vertical-align:middle; width:0; height:0; border-top:6px solid #65c1e3; border-left:4px solid transparent; border-right:4px solid transparent}
-.articles-archive-title {float:right; text-transform:uppercase; font-weight:bold; color:#65c1e3; padding:18px 0 0 0}
-.articles-archive-title img {vertical-align:middle; margin:0 0 0 3px}
 
 .services-top {padding:62px 0 63px 0; background:url(../images/services-top.jpg); background-position:center; background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
 .page-projects .services-top {background-image:url(../images/projects-top.jpg)}
@@ -620,30 +655,6 @@ footer {background:#f8f8f8; color:#000}
 .service-projects {background:#eef2f4; padding:54px 0 53px 0; margin:0 0 10px 0}
 .service-projects h2 {font-size:36px; line-height:36px; color:#65459b; margin:0}
 
-.articles-list {margin-top:-18px}
-.service-projects-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:0 -10px; padding:17px 0 0 0}
-.articles-list .service-projects-list {padding:0}
-.service-projects-item {position:relative; display:inline-block; vertical-align:top; background:#fff; width:260px; padding:19px 20px 34px 20px; margin:19px 10px 0 10px}
-.project-list .service-projects-item {-webkit-box-shadow:0 0 5px rgba(165, 71, 122, .75); -moz-box-shadow:0 0 5px rgba(165, 71, 122, .75); box-shadow:0 0 5px rgba(165, 71, 122, .75)}
-.articles-list .service-projects-item {padding-bottom:25px; -webkit-box-shadow:0 0 5px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 5px rgba(101, 193, 227, .75); box-shadow:0 0 5px rgba(101, 193, 227, .75)}
-.service-projects-item:hover {padding:16px 17px 31px 17px; border:3px solid #65459b}
-.project-list .service-projects-item:hover {border-color:#a5477a}
-.articles-list .service-projects-item:hover {padding-bottom:22px; border-color:#65c1e3}
-.service-projects-item-name {text-transform:uppercase; font-weight:bold; font-size:18px; line-height:18px; letter-spacing:0; padding:27px 11px 2px 11px}
-.service-projects-item-name a {color:#65459b; text-decoration:none}
-.project-list .service-projects-item-name a {color:#a5477a}
-.articles-list .service-projects-item-name a {color:#65c1e3}
-.service-projects-item-name a:hover {color:#000}
-.service-projects-item-title {text-transform:uppercase; color:#838383; font-size:12px; line-height:18px; letter-spacing:0; padding:18px 11px 0 11px}
-.service-projects-item-text {color:#000; font-size:12px; line-height:18px; letter-spacing:0; padding:0 11px}
-.articles-list .service-projects-item-text {padding-top:19px}
-.service-projects-item-tags {color:#808080; font-size:12px; line-height:18px; letter-spacing:0; padding:18px 11px 0 11px}
-.content .service-projects-item-tags a {color:#808080}
-.service-projects-item-current {position:absolute; left:50%; top:-11px; width:110px; height:20px; margin:0 0 0 -55px; letter-spacing:0; background:#65459b; color:#fff; text-align:center; font-size:10px; line-height:20px; text-transform:uppercase}
-.service-projects-item:hover .service-projects-item-current {top:-14px}
-.project-list .service-projects-item-current {background:#a5477a}
-.articles-list .service-projects-item-current {background:#65c1e3}
-
 .project-list h2 {font-size:36px; line-height:36px; margin:54px 0 0 0; color:#a5477a}
 .project-list h2 a {color:#a5477a}
 .project-list h2+h3 {font-size:24px; line-height:24px; color:#000; font-weight:normal; margin:22px 0 0 0}
@@ -659,15 +670,6 @@ footer {background:#f8f8f8; color:#000}
 
 .other-news-wrap {background:#f6f9fa}
 
-.pager {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:40px 0 53px 0}
-.pager a {display:inline-block; vertical-align:middle; margin:0 0 0 3px; position:relative; width:28px; height:28px; background:#c0c0c0; color:#fff; text-align:center; line-height:28px; font-size:12px; letter-spacing:0; text-decoration:none; -moz-border-radius:14px; -webkit-border-radius:14px; border-radius:14px}
-.pager a:first-child {margin:0}
-.pager a:hover {background:#000}
-.pager a.active {background:#000}
-.pager span {display:inline-block; width:16px; height:4px; background:url(../images/pager-sep.png); vertical-align:middle; margin:0 6px 0 9px}
-.page-services .pager a.active {background:#65459b}
-.page-projects .pager a.active {background:#a5477a}
-.page-articles .pager a.active {background:#65c1e3}
 
 .project-info {width:100%; color:#000; padding:0 0 40px 0}
 .project-info:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -913,16 +915,3 @@ footer {background:#f8f8f8; color:#000}
 .trainer-item-name a {text-decoration:none}
 .trainer-item-name a:hover {color:#000}
 .trainer-item-text {padding:9px 0 0 0}
-
-.tags {border-top:5px solid #fc4c02; line-height:36px; width:940px; margin:5px auto 0 auto; padding:45px 0 50px 0}
-.tags h2 {font-size:36px; line-height:36px; margin:0; text-transform:uppercase; padding:13px 0 23px 0}
-.page-articles .tags {border-color:#65c1e3}
-.page-articles .tags h2 {color:#65c1e3}
-.tags a {text-decoration:none; white-space:nowrap}
-.page-articles .tags a {color:#65c1e3}
-.tags a:hover {color:#000}
-.tags-size-1 {font-size:24px}
-.tags-size-2 {font-size:18px}
-.tags-size-3 {font-size:30px}
-.tags-size-4 {font-size:12px}
-.tags-size-5 {font-size:36px}

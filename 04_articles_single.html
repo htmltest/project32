@@ -23,7 +23,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
 
-    <body class="page-articles">
+    <body>
 
         <!-- wrapper -->
         <div class="wrapper">
@@ -64,7 +64,7 @@
                 <!-- header inner END -->
 
                 <!-- top -->
-                <div class="top">
+                <div class="top page-articles">
                     <nav>
                         <ul>
                             <li><a href="#">Наши услуги</a></li>
@@ -86,28 +86,29 @@
 
             </header>
 
-            <div class="breadcrumbs">
+            <div class="breadcrumbs page-articles">
                 <a href="#">ExectGroup</a> <span><img src="images/breadcrumbs.png" alt="" width="7" height="5" /></span>
                 <a href="#">Инфоцентр</a> <span><img src="images/breadcrumbs.png" alt="" width="7" height="5" /></span>
                 <a href="#">Новости</a> <span><img src="images/breadcrumbs.png" alt="" width="7" height="5" /></span>
                 Как оценить уровень вовлеченности сотрудников в жизнь компании?
             </div>
 
-            <div class="content services-title">
-                <h1>Как оценить уровень вовлеченности сотрудников в жизнь компании?</h1>
-            </div>
-
             <!-- content -->
-            <div class="content">
+            <div class="content page-articles">
+                <h1>Как оценить уровень вовлеченности сотрудников в жизнь компании?</h1>
+
                 <div class="article-ctrl">
                     22 окт 2014 &nbsp;/&nbsp;
                     <a href="#">Новости EXECT</a>, <a href="#">Сочи 2014</a>
                 </div>
-                <div class="info-block info-block-2">
-                    <div class="info-block-inner">
-                        <div class="info-block-text">По данным исследований, чем больше вовлеченность сотрудников, тем выше рейтинг компании как HR бренда, и, соответственно, ниже «текучка кадров», выше лояльность клиентов продукту, прибыль и стоимость самой компании</div>
+                <!-- info block -->
+                <div class="info-block">
+                    <img src="files/typography-info-block.jpg" alt="" class="info-block-bg" />
+                    <div class="info-block-text">
+                        <p>По данным исследований, чем больше вовлеченность сотрудников, тем выше рейтинг компании как HR бренда, и, соответственно, ниже «текучка кадров», выше лояльность клиентов продукту, прибыль и стоимость самой компании</p>
                     </div>
                 </div>
+                <!-- info block END -->
                 <div class="content-inner">
                     <p>Для оценки уровня вовлеченности можно предложить сотрудникам заполнить следующую анкету «12 показателей качества вашего места работы»:</p>
                     <ol>
@@ -125,37 +126,36 @@
                         <li>В течение прошедшего года у меня была возможность для учебы, профессионального роста.</li>
                     </ol>
                     <p>Если на все эти вопросы или хотя бы на первые шесть из них ваши сотрудники отвечают «Да», то вам совершенно не о чем беспокоиться – они вовлечены в дело компании всей душой.</p>
-                    <div class="content-gallery">
-                        <ul>
-                            <li><img src="files/content-gallery.jpg" alt="" width="940" height="470" /></li>
-                            <li><img src="files/content-gallery.jpg" alt="" width="940" height="470" /></li>
-                            <li><img src="files/content-gallery.jpg" alt="" width="940" height="470" /></li>
-                        </ul>
-                        <a href="#" class="content-gallery-prev"></a>
-                        <a href="#" class="content-gallery-next"></a>
-                    </div>
+                </div>
 
+                <div class="content-gallery">
+                    <ul>
+                        <li><img src="files/content-gallery.jpg" alt="" width="940" height="470" /></li>
+                        <li><img src="files/content-gallery.jpg" alt="" width="940" height="470" /></li>
+                        <li><img src="files/content-gallery.jpg" alt="" width="940" height="470" /></li>
+                    </ul>
+                    <a href="#" class="content-gallery-prev"></a>
+                    <a href="#" class="content-gallery-next"></a>
+                </div>
+
+                <div class="content-inner">
                     <p>Если же положительных ответов меньше, то вы неизбежно столкнетесь со снижением производительности труда, тревожностью, микрополитическими играми в коллективе. Например, когда новичок, пришедший в компанию с горящими энтузиазмом и интересом глазами, через некоторое время пополняет ряды всем недовольных циников в курилке. Когда сотрудник не уверен в своем будущем в компании, он начинает самостоятельно строить всевозможные сценарии развития событий, это отнимает у него много времени и душевных сил, а также мешает ему четко следовать поставленной руководством цели.</p>
                     <p>ОПУБЛИКОВАНО НА ОФИЦИАЛЬНОМ САЙТЕ ПРЕМИИ «<a href="#">HR-БРЕНД</a>».</p>
 
-                    <div class="content services-title">
-                        <div class="services-inside-top">
-                            <div class="services-inside-tags">
-                                <a href="#">Новости EXECT</a>,
-                                <a href="#">Сочи 2014</a>
-                            </div>
-                            <div class="services-inside-social">
-                                <span id="ya_share_counter"></span>
-                                <script src="//yandex.st/share/share.js"></script>
-                                <script>
-                                    var yaShareCounter = new Ya.share({
-                                        'element': 'ya_share_counter',
-                                        'theme': 'counter',
-                                        'elementStyle': {'quickServices': ['vkontakte', 'facebook', 'twitter', 'gplus'], 'type': 'small'}
-                                     });
-                                </script>
-                            </div>
-                        </div>
+                    <div class="article-social">
+                        <span id="ya_share_counter"></span>
+                        <script src="//yandex.st/share/share.js"></script>
+                        <script>
+                            var yaShareCounter = new Ya.share({
+                                'element': 'ya_share_counter',
+                                'theme': 'counter',
+                                'elementStyle': {'quickServices': ['vkontakte', 'facebook', 'twitter', 'gplus'], 'type': 'small'}
+                             });
+                        </script>
+                    </div>
+                    <div class="article-tags">
+                        06 ноя 2014 &nbsp;/&nbsp;
+                        <a href="#">Новости EXECT</a>, <a href="#">Сочи 2014</a>
                     </div>
 
                 </div>
@@ -163,24 +163,26 @@
             <!-- content END -->
 
             <!-- other news -->
-            <div class="other-news-wrap">
-                <div class="other-news">
-                    <div class="other-news-title">Другие новости по теме</div>
-                    <div class="other-news-list">
-                        <div class="other-news-item">
-                            <div class="other-news-item-name"><a href="#">Компания EXECT Business Training вошла в топ-лист провайдеров услуг по развитию лидерства в России</a></div>
-                            <div class="other-news-item-anonce">EXECT Business Training вошла в список шести сильнейших компаний России, предоставляющих услуги по обучению и развитию лидеров.</div>
-                            <div class="other-news-item-date">22 окт 2014</div>
-                        </div>
-                        <div class="other-news-item">
-                            <div class="other-news-item-name"><a href="#">Компания EXECT провела обучение первых 300 волонтеров Игр «Сочи 2014»</a></div>
-                            <div class="other-news-item-anonce">Благодаря богатой экспертизе ведущих тренеров по направлению и упорству проектной команды компания EXECT Business Training.</div>
-                            <div class="other-news-item-date">22 окт 2014</div>
-                        </div>
-                        <div class="other-news-item">
-                            <div class="other-news-item-name"><a href="#">EXECT Business Training – зарегистрированный провайдер обучения Project Management Institute® в России!</a></div>
-                            <div class="other-news-item-anonce">Восемь долгих месяцев компания EXECT Business Training вела переговоры с представителями PMI® в США для получения почетного звания провайдера.</div>
-                            <div class="other-news-item-date">09 июн 2014</div>
+            <div class="other-news-wrap page-articles">
+                <div class="other-news-inner">
+                    <div class="other-news">
+                        <div class="other-news-title">Другие новости по теме</div>
+                        <div class="other-news-list">
+                            <div class="other-news-item">
+                                <div class="other-news-item-name"><a href="#">Компания EXECT Business Training вошла в топ-лист провайдеров услуг по развитию лидерства в России</a></div>
+                                <div class="other-news-item-anonce">EXECT Business Training вошла в список шести сильнейших компаний России, предоставляющих услуги по обучению и развитию лидеров.</div>
+                                <div class="other-news-item-date">22 окт 2014</div>
+                            </div>
+                            <div class="other-news-item">
+                                <div class="other-news-item-name"><a href="#">Компания EXECT провела обучение первых 300 волонтеров Игр «Сочи 2014»</a></div>
+                                <div class="other-news-item-anonce">Благодаря богатой экспертизе ведущих тренеров по направлению и упорству проектной команды компания EXECT Business Training.</div>
+                                <div class="other-news-item-date">22 окт 2014</div>
+                            </div>
+                            <div class="other-news-item">
+                                <div class="other-news-item-name"><a href="#">EXECT Business Training – зарегистрированный провайдер обучения Project Management Institute® в России!</a></div>
+                                <div class="other-news-item-anonce">Восемь долгих месяцев компания EXECT Business Training вела переговоры с представителями PMI® в США для получения почетного звания провайдера.</div>
+                                <div class="other-news-item-date">09 июн 2014</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -190,7 +192,7 @@
             <!-- bottom -->
             <div class="bottom">
                 <div class="bottom-col bottom-col-1">
-                    <div>Наши услуги</div>
+                    <div><a href="#">Наши услуги</a></div>
                     <ul>
                         <li><a href="#">Корпоративное обучение</a></li>
                         <li><a href="#">Открытое обучение</a></li>
@@ -206,7 +208,7 @@
                 </div>
 
                 <div class="bottom-col bottom-col-2">
-                    <div>Наш опыт</div>
+                    <div><a href="#">Наш опыт</a></div>
                     <ul>
                         <li><a href="#">Текущие проекты</a></li>
                         <li><a href="#">Клиенты и отзывы</a></li>
@@ -215,7 +217,7 @@
                 </div>
 
                 <div class="bottom-col bottom-col-3">
-                    <div>Инфоцентр</div>
+                    <div><a href="#">Инфоцентр</a></div>
                     <ul>
                         <li><a href="#">Публикации</a></li>
                         <li><a href="#">Мнения</a></li>
@@ -227,7 +229,7 @@
                 </div>
 
                 <div class="bottom-col bottom-col-4">
-                    <div>О компании</div>
+                    <div><a href="#">О компании</a></div>
                     <ul>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Команда</a></li>
