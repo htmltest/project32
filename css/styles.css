@@ -107,6 +107,11 @@ a.btn:active {background:#000}
 .info-block-text {position:relative; width:900px; margin:0 auto; background:#fff; font-size:24px; font-weight:500; line-height:27px; padding:1px 30px 7px 30px; color:#000}
 .content .info-block-text {width:780px}
 .info-block-text p {margin:27px 0}
+.info-block-wrap {width:960px; margin:0 auto; position:relative}
+.info-block-wrap:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.info-block-descr {float:left; width:520px; background:#fff; font-size:24px; line-height:27px; padding:5px 90px 31px 30px; color:#000}
+.info-block-descr p {margin:27px 0}
+.info-block-want {float:left; padding:0 0 0 10px}
 
 .top-sale {position:relative; margin:0 -10px 0 -10px; font-size:0; line-height:0; letter-spacing:-1px; color:#000}
 .top-sale-item {display:inline-block; vertical-align:top; width:260px; font-size:14px; line-height:18px; letter-spacing:0; background:#fff; position:relative; padding:18px 20px 108px 20px; margin:15px 10px 15px 10px; -webkit-box-shadow:0 0 5px rgba(252, 76, 2, .75); -moz-box-shadow:0 0 5px rgba(252, 76, 2, .75); box-shadow:0 0 5px rgba(252, 76, 2, .75)}
@@ -315,6 +320,10 @@ a.btn:active {background:#000}
 .articles-item-name a {text-decoration:none}
 .articles-item-text {color:#000; padding:21px 11px 0 11px; font-size:12px}
 .articles-item-tags {font-size:12px; color:#808080; padding:18px 11px 0 11px}
+.articles-item-current {position:absolute; left:0; top:-11px; width:100%; text-align:center; font-size:10px; line-height:20px; text-transform:uppercase; color:#fff}
+.articles-item:hover .articles-item-current {top:-14px}
+.articles-item-current div {display:inline-block; vertical-align:top; padding:0 11px; background:#fc4c02}
+.articles-item-title {color:#838383; font-size:12px; padding:18px 11px 0 11px; margin:0 0 -21px 0; text-transform:upperase}
 
 .pager {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:40px 0 53px 0}
 .pager a {display:inline-block; vertical-align:middle; margin:0 0 0 3px; position:relative; width:28px; height:28px; background:#c0c0c0; color:#fff; text-align:center; line-height:28px; font-size:12px; letter-spacing:0; text-decoration:none; -moz-border-radius:14px; -webkit-border-radius:14px; border-radius:14px}
@@ -333,6 +342,14 @@ a.btn:active {background:#000}
 .tags-size-5 {font-size:36px}
 
 .content-inner {width:780px; margin:0 auto}
+
+.project-inside-header {padding:63px 0; background:none; background-position:center; background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
+.project-inside-header-inner {width:940px; margin:0 auto; display:table}
+.project-inside-header-logo {display:table-cell; background:#eceaea; width:240px; text-align:center; vertical-align:middle; line-height:0}
+.project-inside-header-info {display:table-cell; background:#fff; width:340px; padding:27px 30px 0 30px; text-align:left; vertical-align:top; color:#000}
+.project-inside-header-info-title {color:#838383; font-size:12px; text-transform:uppercase}
+.project-inside-header-info-name {color:#983e6f; font-size:18px; line-height:18px; font-weight:bold; text-transform:uppercase; margin:-2px 0 20px 0}
+.project-inside-header-sep {display:table-cell; width:10px}
 
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
@@ -393,6 +410,7 @@ footer {background:#f8f8f8; color:#000}
 .page-articles .articles-item {-webkit-box-shadow:0 0 5px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 5px rgba(101, 193, 227, .75); box-shadow:0 0 5px rgba(101, 193, 227, .75)}
 .page-articles .top-sale-item:hover,
 .page-articles .articles-item:hover {border-color:#65c1e3}
+.page-articles .articles-item-current div {background:#65c1e3}
 .page-articles .content-gallery-prev,
 .page-articles .content-gallery-next {background-color:#65c1e3}
 .page-articles .content-gallery-prev:hover {background-color:#42abd9}
@@ -467,7 +485,11 @@ footer {background:#f8f8f8; color:#000}
 .page-projects hr {background:#983f6f}
 .page-projects ul li:after {background-color:#983f6f}
 .page-projects ul li ul li:after {border-color:#983f6f}
-.page-projects .top-sale-item {-webkit-box-shadow:0 0 5px rgba(152, 63, 111, .75); -moz-box-shadow:0 0 5px rgba(152, 63, 111, .75); box-shadow:0 0 5px rgba(152, 63, 111, .75)}
+.page-projects .top-sale-item,
+.page-projects .articles-item {-webkit-box-shadow:0 0 5px rgba(152, 63, 111, .75); -moz-box-shadow:0 0 5px rgba(152, 63, 111, .75); box-shadow:0 0 5px rgba(152, 63, 111, .75)}
+.page-projects .top-sale-item:hover,
+.page-projects .articles-item:hover {border-color:#983f6f}
+.page-projects .articles-item-current div {background:#983f6f}
 .page-projects .content-gallery-prev,
 .page-projects .content-gallery-next {background-color:#983f6f}
 .page-projects .content-gallery-prev:hover {background-color:#742948}
@@ -475,6 +497,27 @@ footer {background:#f8f8f8; color:#000}
 .page-projects .content-gallery-next:hover {background-color:#742948}
 .page-projects .content-gallery-next:active {background-color:#4b101c}
 .page-projects table th {background:#983f6f}
+.page-projects .top {background:#983f6f}
+.page-projects nav ul li {border-color:#bc759b}
+.page-projects nav ul li a {color:#fff}
+.page-projects nav ul li a:hover,
+.page-projects nav ul li.active a {background:#fff; color:#983f6f}
+.page-projects .breadcrumbs span {background:#d2a3bc}
+.page-projects .tags {border-color:#983f6f}
+.page-projects .tags h2 {color:#983f6f}
+.page-projects .pager a {color:#fff}
+.page-projects .pager a:hover {color:#fff; background:#742948}
+.page-projects .pager a:active {color:#fff; background:#4b101c}
+.page-projects .pager a.active {color:#fff; background:#983f6f}
+.page-projects header a,
+.page-projects .bottom a,
+.page-projects footer a {color:#fc4c02; outline:none}
+.page-projects header a:hover,
+.page-projects .bottom a:hover,
+.page-projects footer a:hover {color:#c0c0c0}
+.page-projects header a:active,
+.page-projects .bottom a:active,
+.page-projects footer a:active {color:#000}
 
 .page-services a {color:#65449b}
 .page-services a:hover {color:#422c78}
@@ -552,24 +595,6 @@ footer {background:#f8f8f8; color:#000}
 .page-404-item-name a:hover {color:#000}
 .page-404-item-anonce {padding:9px 0 0 0}
 
-.services-top {padding:62px 0 63px 0; background:url(../images/services-top.jpg); background-position:center; background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
-.page-projects .services-top {background-image:url(../images/projects-top.jpg)}
-.services-top-inner {width:950px; margin:0 auto; padding:0 10px 0 0}
-.services-top-container {display:table; width:100%}
-.services-top-text {display:table-cell; width:580px; padding:32px 30px 37px 30px; vertical-align:top; background:#fff; font-size:24px; line-height:27px}
-.services-top-text p {margin:0; padding:27px 0 0 0}
-.services-top-text p:first-child {padding:0}
-.services-top-sep {display:table-cell; width:10px}
-.services-top-info {display:table-cell; vertical-align:top; width:260px; padding:15px 20px 24px 20px; background:#513581; color:#fff}
-.page-projects .services-top-info {background:#71254e}
-.services-top-title {text-transform:uppercase; font-weight:bold; font-size:24px; line-height:27px}
-.services-top-descr {line-height:14px; padding:5px 0 0 0}
-.services-top-descr p {margin:0; padding:18px 0 0 0}
-.services-top-link {padding:30px 0 0 0}
-.services-top-link a {display:block; text-transform:uppercase; color:#fff; text-align:center; text-decoration:none; background:#9d6fea; line-height:36px; height:36px}
-.page-projects .services-top-link a {background:#ca5f99}
-.services-top-link a:hover {background:#c0c0c0}
-.services-top-link a:active {background:#000}
 
 .services-block-1 {padding:36px 0 64px 0}
 
@@ -637,14 +662,6 @@ footer {background:#f8f8f8; color:#000}
 .service-header-info-title {padding:27px 0 0 0; font-weight:bold; font-size:18px; line-height:18px; text-transform:uppercase}
 .service-header-info-text {padding:17px 0 0 0}
 .service-header-inner .services-top-info {display:block; float:right}
-
-.project-inside-header {padding:63px 0; background:none; background-position:center; background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
-.project-inside-header-inner {width:940px; margin:0 auto; display:table}
-.project-inside-header-logo {display:table-cell; background:#eceaea; width:240px; text-align:center; vertical-align:middle; line-height:0}
-.project-inside-header-info {display:table-cell; background:#fff; width:340px; padding:27px 30px 0 30px; text-align:left; vertical-align:top; color:#000}
-.project-inside-header-info-title {color:#838383; font-size:12px; text-transform:uppercase}
-.project-inside-header-info-name {color:#983e6f; font-size:18px; line-height:18px; font-weight:bold; text-transform:uppercase; margin:-2px 0 20px 0}
-.project-inside-header-sep {display:table-cell; width:10px}
 
 .service-descr-text {float:left; width:620px; color:#000; padding:17px 0 0 0}
 .service-descr-text h3 {font-weight:normal; color:#000; font-size:24px; line-height:24px}
