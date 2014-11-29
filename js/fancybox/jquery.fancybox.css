@@ -105,9 +105,21 @@
 	        border-radius: 12px;
 }
 
-.page-projects .fancybox-close {
-    background-color: #ca5e98;
-}
+.page-articles .fancybox-close {background-color:#65c1e3}
+.page-articles .fancybox-close:hover {background-color:#42abd9}
+.page-articles .fancybox-close:active {background-color:#1993ce}
+
+.page-about .fancybox-close {background-color:#e26362}
+.page-about .fancybox-close:hover {background-color:#d84040}
+.page-about .fancybox-close:active {background-color:#cc1919}
+
+.page-projects .fancybox-close {background-color:#ca5e98}
+.page-projects .fancybox-close:hover {background-color:#742948}
+.page-projects .fancybox-close:active {background-color:#4b101c}
+
+.page-services .fancybox-close {background-color:#65449b}
+.page-services .fancybox-close:hover {background-color:#422c78}
+.page-services .fancybox-close:active {background-color:#191150}
 
 .fancybox-nav {
 	position: absolute;
@@ -209,11 +221,16 @@
     line-height: 18px;
 	position: relative;
 	text-shadow: none;
-    color: #a5477a;
+    color: #000;
     text-transform:uppercase;
 	z-index: 8050;
     display:block;
 }
+
+.page-articles .fancybox-title {color:#65c1e3}
+.page-about .fancybox-title {color:#e26362}
+.page-projects .fancybox-title {color:#983f6f}
+.page-services .fancybox-title {color:#65449b}
 
 .fancybox-opened .fancybox-title {
 	visibility: visible;
