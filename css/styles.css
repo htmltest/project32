@@ -434,6 +434,30 @@ a.btn:active {background:#000}
 .services-list-4 .services-item {width:220px}
 .services-item h4 a {text-decoration:none}
 
+.services-define {background:#eef2f4; padding:29px 30px 33px 30px}
+.services-define-title {color:#65459b; font-size:18px; line-height:18px}
+.services-define-text {color:#7b7b7b; padding:10px 0 0 0}
+
+.services-feature-list {width:100%; color:#000; padding:3px 0 0 0}
+.services-feature-list:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.services-feature-col {float:right; width:460px}
+.services-feature-col:first-child {float:left}
+
+.services-graph {background:#65459b; margin:64px 0}
+.services-graph-inner {width:940px; margin:0 auto}
+.services-graph-title {font-weight:bold; font-size:36px; line-height:36px; padding:36px 0 0 0; text-transform:uppercase; text-align:center; color:#fff}
+.services-graph-content {width:100%; padding:0 0 33px 0}
+.services-graph-content:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.services-graph-img {float:left; line-height:0; width:660px; padding:56px 0 0 0}
+.services-graph-name {float:left; width:222px; display:table; background:url(../images/services-graph-name.png); margin:36px 0 0 18px}
+.services-graph-name div {display:table-cell; height:234px; text-align:center; color:#fff; font-weight:bold; font-size:16px; vertical-align:middle; padding:0 60px}
+
+.courses {padding:64px 0 48px 0; color:#000}
+.courses h2 {text-align:center; margin:0}
+.courses-list {font-size:0; line-height:0; letter-spacing:-1px; padding:4px 0 0 0; position:relative; margin:0 -10px}
+.courses-item {position:relative; width:220px; padding:0 10px; font-size:14px; line-height:18px; letter-spacing:0; display:inline-block; vertical-align:top}
+.courses-item ul {margin-top:-3px}
+
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
 .service-projects+.bottom,
@@ -684,39 +708,6 @@ footer {background:#f8f8f8; color:#000}
 .page-404-item-anonce {padding:9px 0 0 0}
 
 
-.services-block-1 {padding:36px 0 64px 0}
-
-.services-define {background:#eef2f4; padding:29px 30px 33px 30px}
-.services-define-title {color:#65459b; font-size:18px; line-height:18px}
-.services-define-text {color:#7b7b7b; padding:10px 0 0 0}
-
-.services-feature {padding:21px 0 0 0}
-.services-feature h2 {font-size:36px; line-height:36px; color:#65459b}
-.services-feature h3 {font-size:24px; line-height:27px; font-weight:normal; color:#000}
-.services-feature h2+h3 {margin-top:-11px}
-.services-feature-list {width:100%; color:#000; padding:3px 0 0 0}
-.services-feature-list:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.services-feature-col {float:right; width:460px}
-.services-feature-col:first-child {float:left}
-
-.services-graph {background:#65459b}
-.services-graph-inner {width:940px; margin:0 auto}
-.services-graph-title {font-weight:bold; font-size:36px; line-height:36px; padding:36px 0 0 0; text-transform:uppercase; text-align:center; color:#fff}
-.services-graph-content {width:100%; padding:0 0 33px 0}
-.services-graph-content:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.services-graph-img {float:left; line-height:0; width:660px; padding:56px 0 0 0}
-.services-graph-name {float:left; width:222px; display:table; background:url(../images/services-graph-name.png); margin:36px 0 0 18px}
-.services-graph-name div {display:table-cell; height:234px; text-align:center; color:#fff; font-weight:bold; font-size:16px; vertical-align:middle; padding:0 60px}
-
-.courses {padding:64px 0 48px 0; color:#000}
-.courses h2 {text-align:center; font-size:36px; line-height:36px; color:#65459b; margin:0}
-.courses-list {font-size:0; line-height:0; letter-spacing:-1px; padding:4px 0 0 0; position:relative; margin:0 -10px}
-.courses-item {position:relative; width:220px; padding:0 10px; font-size:14px; line-height:18px; letter-spacing:0; display:inline-block; vertical-align:top}
-.courses-item h3 {color:#65459b}
-.courses-item ul+h3 {margin-top:44px}
-.courses-item ul {margin-top:-3px}
-.courses-item ul li {background:url(../images/courses-li.png) no-repeat 5px 6px; padding-left:20px}
-.courses-item a {color:#8857db}
 
 .services-inside-top {width:100%; padding:17px 0 0 0}
 .services-inside-top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
