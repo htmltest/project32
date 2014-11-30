@@ -575,6 +575,9 @@ a.btn:active {background:#000}
 .trainers-top-text {float:left; width:620px; padding:10px 0 0 0}
 .trainers-side {float:right; width:300px; line-height:0; padding:37px 0 0 0}
 
+.practice-clients {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:18px -20px}
+.practice-clients img {vertical-align:middle; margin:13px 20px}
+
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
 .service-projects+.bottom,
@@ -940,25 +943,3 @@ footer {background:#f8f8f8; color:#000}
 .job-item-link a {display:block; text-decoration:none; margin:0 30px; height:44px; line-height:44px; text-transform:uppercase; text-align:center; color:#fff; background:#e26362}
 .job-item-link a:hover {background:#c0c0c0}
 .job-item-link a:active {background:#000}
-
-.practices-top {margin:-17px 0 0 0; padding:17px 0 55px 0; background:url(../images/practices-top.jpg); background-position:center; background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
-.practices-top-inner {width:940px; margin:0 auto; color:#fff}
-.practices-top-inner a {color:#fff}
-.practices-top .breadcrumbs span {background:#b94949}
-.practices-top h1 {font-weight:bold; font-size:72px; line-height:72px; text-transform:uppercase; margin:0; padding:12px 0 0 0}
-.practices-top-text {font-size:24px; line-height:24px; padding:40px 0 0 0}
-
-.practices {color:#000}
-.practices a {color:#e16262}
-.practice {border-top:5px solid #e26362; padding:55px 0 50px 0}
-.practice:first-child {border:none}
-.practice-title {font-size:36px; line-height:36px; font-weight:bold; text-transform:uppercase; color:#e16262}
-.practice h2 {color:#e16262}
-.practice h2.practice-name {color:#000; font-weight:normal; line-height:24px; margin:23px 0 18px 0}
-.practice h3 {color:#e16262}
-.practice ul li {background:url(../images/li-job.png) no-repeat 4px 7px}
-.practice ol li:before {color:#e26362; font-weight:bold}
-.practice ol ol li:before {color:#ffa9a8}
-.practice blockquote {-moz-border-radius:0; -webkit-border-radius:0; border-radius:0}
-.practice-clients {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:0 -20px}
-.practice-clients img {vertical-align:middle; margin:13px 20px}
