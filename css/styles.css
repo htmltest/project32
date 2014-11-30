@@ -215,7 +215,7 @@ a.btn:active {background:#000}
 .main-partners-top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .main-partners-top-inner {float:left; width:100%}
 .main-partners-icon {position:relative; margin:-67px 0 0 0; line-height:0; text-align:center}
-.main-partners-icon img {position:relative; border:3px solid #9d6fea; -moz-border-radius:73px; -webkit-border-radius:73px; border-radius:73px}
+.main-partners-icon img {position:relative; border:3px solid #9d6fea; background:#9d6fea; -moz-border-radius:73px; -webkit-border-radius:73px; border-radius:73px}
 .main-partners-text {font-weight:bold; text-transform:uppercase; text-align:center; color:#fff; padding:19px 0 12px 0; min-height:72px; background:url(../images/main-games-text.png) repeat-x left bottom}
 .main-partners-title {font-size:36px; line-height:36px; text-transform:uppercase; font-weight:bold; color:#fff; text-align:center; padding:37px 0 33px 0}
 .main-partners-list {width:940px; margin:0 auto; position:relative}
@@ -235,6 +235,15 @@ a.btn:active {background:#000}
 .main-partners-next {right:-116px; background-position:-53px top}
 .main-partners-next:hover {background-position:-53px -53px}
 .main-partners-detail {display:none}
+
+.page-about .main-partners {background:#f8f8f8}
+.page-about .main-partners-text {color:#cf4646; background:url(../images/main-games-text-2.png) repeat-x left bottom}
+.page-about .main-partners-title {color:#cf4646}
+.page-about .main-partners-icon img {border-color:#cf4646; background:#cf4646}
+.page-about .main-partners-prev {background-position:left -159px}
+.page-about .main-partners-prev:hover {background-position:left -212px}
+.page-about .main-partners-next {background-position:-53px -159px}
+.page-about .main-partners-next:hover {background-position:-53px -212px}
 
 .main-study {position:relative; background:url(../images/main-study-bg.jpg) no-repeat center top}
 .main-study-title {text-align:center; font-size:36px; line-height:36px; text-transform:uppercase; font-weight:bold; padding:33px 0 0 0}
@@ -508,15 +517,34 @@ a.btn:active {background:#000}
 .about-staff-header ul li:after {display:none}
 
 .staff {position:relative; font-size:0; line-height:0; letter-spacing:-1px; margin:0 -10px}
-.staff-item {display:inline-block; vertical-align:top; width:172px; margin:29px 10px 0 10px; text-align:center; font-size:14px; line-height:18px; letter-spacing:0; color:#000}
-.staff-item-img {position:relative; line-height:0}
-.staff-item-img img {position:relative; -moz-border-radius:86px; -webkit-border-radius:86px; border-radius:86px}
-.staff-item-name {font-size:18px; font-weight:bold; text-transform:uppercase; padding:10px 0 0 0}
+.staff-item {display:inline-block; vertical-align:top; width:172px; margin:26px 10px 0 10px; text-align:center; font-size:14px; line-height:18px; letter-spacing:0; color:#000}
+.staff-item-img {position:relative; line-height:0; margin:0 -3px}
+.staff-item-img img {position:relative; border:3px solid #fff; -moz-border-radius:89px; -webkit-border-radius:89px; border-radius:89px}
+.staff-item:hover .staff-item-img img {border-color:#e76262}
+.staff-item-name {font-size:18px; font-weight:bold; text-transform:uppercase; padding:7px 0 0 0}
 .staff-item-name a {text-decoration:none}
 .staff-item-text {padding:11px 0 0 0}
 
 .about-center {width:100%}
 .about-center:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+
+.about-info {background:#e76262 url(../images/about-info-bg-2.png) no-repeat center bottom; color:#fff; margin:38px 0 0 0; padding:19px 0 73px 0}
+.about-info .content {color:#fff}
+.page-about .about-info a {color:#fff}
+.about-info-col {float:left; width:300px; padding:0 0 0 20px}
+.about-info-col:first-child {padding:0}
+.about-info-col h3 {margin-bottom:26px}
+.about-info-col ul li {padding-left:0}
+.about-info-col ul li:after {display:none}
+
+.about-contacts {padding:0 0 19px 0}
+.about-contacts-cols {width:100%; color:#000; padding:0 0 43px 0}
+.about-contacts-cols:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.about-contacts-col {float:right; width:460px}
+.about-contacts-col:first-child {float:left}
+.about-contacts-name {text-transform:uppercase; color:#838383}
+.about-contacts-map {position:relative; margin:0 -10px}
+#map {height:287px}
 
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
@@ -861,24 +889,6 @@ footer {background:#f8f8f8; color:#000}
 .blog-item-anonce {color:#000; padding:18px 11px 0 11px}
 .blog-item-date {color:#8d8d8d; padding:18px 11px 0 11px}
 .blog-item-date a {color:#8d8d8d !important}
-
-.about-info {background:#fdb945 url(../images/about-info-bg.png) no-repeat center bottom; color:#fff; padding:19px 0 100px 0}
-.about-info .content {color:#fff}
-.about-info a {color:#fff}
-.about-info-col {float:left; width:300px; padding:0 0 0 20px}
-.about-info-col:first-child {padding:0}
-.about-info-col h3 {margin-bottom:26px}
-.about-info-col ul li {padding-left:0; background:none}
-
-.about-contacts {padding:52px 0 18px 0}
-.about-contacts h2 {font-size:18px; font-weight:bold; line-height:18px; margin:0}
-.about-contacts-cols {width:100%; color:#000; padding:27px 0 29px 0}
-.about-contacts-cols:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.about-contacts-col {float:right; width:460px}
-.about-contacts-col:first-child {float:left}
-.about-contacts-name {font-size:12px; text-transform:uppercase; color:#838383}
-.about-contacts-map {position:relative; margin:0 -10px}
-#map {height:287px}
 
 .job-top {padding:64px 0 63px 0; background:url(../images/job-top.jpg); background-position:center; background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
 .job-top-inner {width:900px; padding:29px 30px 33px 30px; margin:0 auto; background:#fff; font-size:24px; line-height:27px}
