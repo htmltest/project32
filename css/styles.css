@@ -516,7 +516,7 @@ a.btn:active {background:#000}
 .about-staff-header ul li {float:left; margin:0 0 0 30px; padding:0}
 .about-staff-header ul li:after {display:none}
 
-.staff {position:relative; font-size:0; line-height:0; letter-spacing:-1px; margin:0 -10px}
+.staff {position:relative; font-size:0; line-height:0; letter-spacing:-1px; margin:0 -10px 53px -10px}
 .staff-item {display:inline-block; vertical-align:top; width:172px; margin:26px 10px 0 10px; text-align:center; font-size:14px; line-height:18px; letter-spacing:0; color:#000}
 .staff-item-img {position:relative; line-height:0; margin:0 -3px}
 .staff-item-img img {position:relative; border:3px solid #fff; -moz-border-radius:89px; -webkit-border-radius:89px; border-radius:89px}
@@ -545,6 +545,15 @@ a.btn:active {background:#000}
 .about-contacts-name {text-transform:uppercase; color:#838383}
 .about-contacts-map {position:relative; margin:0 -10px}
 #map {height:287px}
+
+.trainers-sort {width:100%; text-transform:uppercase; line-height:34px; padding:0 0 30px 0}
+.trainers-sort:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.trainers-sort ul {margin:0; padding:0; list-style:none}
+.trainers-sort ul li {float:left; margin:0; padding:0 0 0 3px}
+.trainers-sort ul li:after {display:none}
+.trainers-sort ul li:first-child {padding:0}
+.trainers-sort ul li a {float:left; text-decoration:none; position:relative; height:34px; padding:0 20px; border:1px solid #ffede5; background:#fdefef}
+.trainers-sort ul li.active a {color:#fff; background:#e76262; border-color:#e76262}
 
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
@@ -641,6 +650,10 @@ footer {background:#f8f8f8; color:#000}
 .page-about a.btn {color:#fff; background:#e26362}
 .page-about a.btn:hover {background:#d84040}
 .page-about a.btn:active {background:#cc1919}
+.page-about .want {background:#cf4646}
+.page-about .want a.btn {background:#f88585}
+.page-about .want a.btn:hover {background:#d84040}
+.page-about .want a.btn:active {background:#cc1919}
 .page-about h1,
 .page-about h2,
 .page-about h3,
@@ -929,29 +942,6 @@ footer {background:#f8f8f8; color:#000}
 .practice blockquote {-moz-border-radius:0; -webkit-border-radius:0; border-radius:0}
 .practice-clients {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:0 -20px}
 .practice-clients img {vertical-align:middle; margin:13px 20px}
-
-.trainers-top {width:100%; padding:0 0 23px 0}
-.trainers-top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.trainers-top-text {float:left; width:620px; color:#000}
-.trainers-sort {width:100%; text-transform:uppercase; line-height:34px; padding:18px 0 0 0}
-.trainers-sort:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.trainers-sort ul {margin:0; padding:0; list-style:none}
-.trainers-sort ul li {float:left; margin:0; padding:0 0 0 3px; background:none}
-.trainers-sort ul li:first-child {padding:0}
-.trainers-sort ul li a {float:left; text-decoration:none; position:relative; height:34px; padding:0 19px; border:1px solid #fc4c02; -moz-border-radius:17px; -webkit-border-radius:17px; border-radius:17px}
-.trainers-sort ul li a:hover {color:#000}
-.trainers-sort ul li.active a {color:#fff; background:#fc4c02}
-.trainers-side {float:right; width:300px}
-.trainers-social {text-align:center; padding:38px 0 0 0; margin:0 0 -4px 0}
-.trainers-welcome {float:right; width:260px; margin:30px 0 0 0; color:#000; padding:0 20px 26px 20px; background:#f6f6f6; position:relative; -moz-border-radius:13px; -webkit-border-radius:13px; border-radius:13px}
-.trainers-welcome-title {text-transform:uppercase; font-size:18px; line-height:18px; font-weight:500; padding:27px 0 0 0}
-.trainers-welcome-text {line-height:14px}
-.trainers-welcome-link {padding:12px 0 0 0}
-.trainers-welcome-link a {color:#fff; display:block; position:relative; background:#fc4c02; text-transform:uppercase; text-decoration:none; text-align:center; height:36px; line-height:36px; -moz-border-radius:18px; -webkit-border-radius:18px; border-radius:18px}
-.trainers-welcome-link a:hover {background:#c0c0c0}
-.trainers-welcome-link a:active {background:#000}
-.trainers-welcome-photo {position:relative; line-height:0; margin:0 -20px 0 -20px}
-.trainers-welcome-photo img {position:relative; -moz-border-radius:13px 13px 0 0; -webkit-border-radius:13px 13px 0 0; border-radius:13px 13px 0 0}
 
 .trainer-sep {height:5px; background:url(../images/trainer-sep.png); margin:29px 0 -6px 0}
 
