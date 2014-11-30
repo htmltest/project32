@@ -102,6 +102,7 @@ a.btn:active {background:#000}
 
 .article-tags {margin:20px 0 10px 0}
 .article-social {float:right}
+.article-social-2 {padding:17px 0 0 0}
 
 .info-block {width:100%; margin:26px 0 35px 0; padding:64px 0; position:relative; overflow:hidden}
 .content .info-block {margin-left:-10px; width:960px}
@@ -123,7 +124,7 @@ a.btn:active {background:#000}
 .info-block-project-info-name {text-transform:uppercase; color:#983e6f; font-size:18px; font-weight:bold; margin:-2px 0 20px 0}
 .info-block-project-info-text {color:#000}
 
-.top-sale {position:relative; margin:0 -10px 0 -10px; font-size:0; line-height:0; letter-spacing:-1px; color:#000}
+.top-sale {position:relative; margin:18px -10px; font-size:0; line-height:0; letter-spacing:-1px; color:#000}
 .top-sale-item {display:inline-block; vertical-align:top; width:260px; font-size:14px; line-height:18px; letter-spacing:0; background:#fff; position:relative; padding:18px 20px 108px 20px; margin:15px 10px 15px 10px; -webkit-box-shadow:0 0 5px rgba(252, 76, 2, .75); -moz-box-shadow:0 0 5px rgba(252, 76, 2, .75); box-shadow:0 0 5px rgba(252, 76, 2, .75)}
 .top-sale-item:hover {border:3px solid #fc4c02; padding:15px 17px 105px 17px}
 .top-sale-item-type {font-size:12px; text-transform:uppercase; padding:0 0 5px 0}
@@ -555,6 +556,25 @@ a.btn:active {background:#000}
 .trainers-sort ul li a {float:left; text-decoration:none; position:relative; height:34px; padding:0 20px; border:1px solid #ffede5; background:#fdefef}
 .trainers-sort ul li.active a {color:#fff; background:#e76262; border-color:#e76262}
 
+.trainer-header {background:#e76262; color:#fff}
+.trainer-header-inner {width:940px; margin:0 auto}
+.trainer-header-inner:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.trainer-header-info {float:left; width:620px; padding:0 0 18px 0}
+.trainer-header-info-col {float:left; width:300px; padding:0 0 0 20px}
+.page-about .trainer-header-info-col a {color:#fff}
+.trainer-header-info-col:first-child {padding:0}
+.trainer-header-info-title {padding:43px 0 0 0; font-weight:bold; font-size:18px; line-height:18px; text-transform:uppercase}
+.trainer-header-info-text {padding:8px 0 0 0}
+.trainer-header-info-text ul {margin:0; padding:0; list-style:none}
+.trainer-header-info-text ul li {position:relative; margin:9px 0; padding:0 0 0 18px}
+.page-about .trainer-header-info-text ul li:after {content:""; display:block; width:6px; height:6px; position:absolute; left:0; top:5px; background:#fff; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px}
+.trainer-header-want {display:block; float:right}
+
+.trainers-top {width:100%}
+.trainers-top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.trainers-top-text {float:left; width:620px; padding:10px 0 0 0}
+.trainers-side {float:right; width:300px; line-height:0; padding:37px 0 0 0}
+
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
 .service-projects+.bottom,
@@ -942,17 +962,3 @@ footer {background:#f8f8f8; color:#000}
 .practice blockquote {-moz-border-radius:0; -webkit-border-radius:0; border-radius:0}
 .practice-clients {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:0 -20px}
 .practice-clients img {vertical-align:middle; margin:13px 20px}
-
-.trainer-sep {height:5px; background:url(../images/trainer-sep.png); margin:29px 0 -6px 0}
-
-.trainers-top-cols {width:100%; margin:-38px 0 -18px 0}
-.trainers-top-cols:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.trainers-top-col {float:right; width:300px}
-.trainers-top-col:first-child {float:left}
-
-.trainer-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:0 -10px}
-.trainer-item {display:inline-block; vertical-align:top; width:195px; margin:8px 5px 10px 10px; font-size:12px; line-height:18px; color:#000; letter-spacing:0}
-.trainer-item-name {text-transform:uppercase}
-.trainer-item-name a {text-decoration:none}
-.trainer-item-name a:hover {color:#000}
-.trainer-item-text {padding:9px 0 0 0}
