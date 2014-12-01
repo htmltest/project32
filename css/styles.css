@@ -130,7 +130,7 @@ a.btn:active {background:#000}
 .events-info-block a.btn {font-size:14px; line-height:44px; height:44px; width:260px; margin:44px 0 35px 0}
 .btn-events-inside {line-height:44px; height:44px; width:260px; margin:28px 0 35px 0}
 
-.events-map {height:360px; margin:42px 0}
+.events-map {height:360px; margin:0 0 42px 0}
 
 .top-sale {position:relative; margin:18px -10px; font-size:0; line-height:0; letter-spacing:-1px; color:#000}
 .top-sale-item {display:inline-block; vertical-align:top; width:260px; font-size:14px; line-height:18px; letter-spacing:0; background:#fff; position:relative; padding:18px 20px 108px 20px; margin:15px 10px 15px 10px; -webkit-box-shadow:0 0 5px rgba(252, 76, 2, .75); -moz-box-shadow:0 0 5px rgba(252, 76, 2, .75); box-shadow:0 0 5px rgba(252, 76, 2, .75)}
@@ -425,6 +425,16 @@ a.btn:active {background:#000}
 .video-list .articles-item:hover {padding:7px 7px 22px 7px}
 .video-list .articles-item-img a {display:block; position:relative}
 .video-list .articles-item-img a span {display:block; width:90px; height:90px; position:absolute; left:50%; top:50%; margin:-45px 0 0 -45px; background:url(../images/video.png)}
+
+.video-page-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:-10px -10px 38px -10px}
+.video-page-list .articles-item {width:300px; margin:0 0 7px 0; padding:10px 10px 25px 10px}
+.video-page-list .articles-item:hover {padding:7px 7px 22px 7px}
+.video-page-list .articles-item-img a {display:block; position:relative}
+.video-page-list .articles-item-img a span {display:block; width:90px; height:90px; position:absolute; left:50%; top:50%; margin:-45px 0 0 -45px; background:url(../images/video.png)}
+.video-page-list .articles-item-text {font-size:14px}
+.video-page-list .articles-item-tags {font-size:14px}
+
+.video-single {margin:36px 0}
 
 .reviews-item {width:100%; padding:0 0 18px 0}
 .reviews-item:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -782,10 +792,10 @@ footer {background:#f8f8f8; color:#000}
 .page-articles .main-photo-anonce,
 .page-articles .main-photo-date {padding-left:11px; padding-right:11px}
 .page-articles .blog-item-date a {color:#8d8d8d}
-
 .page-articles .reviews-item-author-name {color:#65c1e3}
 .page-articles .reviews-item-text {-webkit-box-shadow:0 0 5px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 5px rgba(101, 193, 227, .75); box-shadow:0 0 5px rgba(101, 193, 227, .75)}
 .page-articles .reviews-item-text:after {background:url(../images/review-arrow-articles.png)}
+.page-articles .video-page-list .articles-item {-webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none}
 
 .page-about a {color:#e26362}
 .page-about a:hover {color:#d84040}
