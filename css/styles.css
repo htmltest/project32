@@ -256,13 +256,16 @@ a.btn:active {background:#000}
 .main-study-content h3 {color:#fff}
 
 .main-projects {background:#a5477a; position:relative}
+.main-projects-events {margin:0 0 25px 0}
 .main-projects-container {width:940px; margin:0 auto; position:relative}
 .main-projects-title {font-weight:bold; text-transform:uppercase; padding:35px 0 17px 0}
 .main-projects-title a {color:#fff}
 .main-projects-list {position:relative; padding:0 0 53px 0}
 .main-projects-item {display:none; position:relative; color:#fff}
 .main-projects-item:first-child {display:block}
+.main-projects-item-type {font-size:18px; font-weight:bold; text-transform:uppercase; padding:43px 0 25px 0}
 .main-projects-item-name {text-transform:uppercase; padding:0 0 33px 0; font-weight:bold; font-size:36px; line-height:36px; background:url(../images/main-projects-item-title.png) repeat-x left bottom}
+.main-projects-events .main-projects-item-name:first-child {padding-top:50px}
 .main-projects-item-task {text-transform:uppercase; padding:33px 0 0 0; color:#f184bf}
 .main-projects-item-descr {font-size:14px; padding:7px 0 0 0}
 .main-projects-item-descr p {margin:0; padding:0}
@@ -282,6 +285,11 @@ a.btn:active {background:#000}
 .main-projects-next {right:-116px; background-position:-53px -106px}
 .main-projects-prev:hover {background-position:left -53px}
 .main-projects-next:hover {background-position:-53px -53px}
+
+.main-projects-item-options {font-weight:normal; font-size:14px; line-height:18px; text-transform:none; padding:12px 0 13px 0}
+.main-projects-item-option-date {display:inline-block; padding:0 39px 0 23px; background:url(../images/main-projects-item-option-1.png) no-repeat left center}
+.main-projects-item-option-time {display:inline-block; padding:0 43px 0 23px; background:url(../images/main-projects-item-option-2.png) no-repeat left center}
+.main-projects-item-option-place {display:inline-block; padding:0 0 0 17px; background:url(../images/main-projects-item-option-3.png) no-repeat left center}
 
 .main-other {background:#eff9fc}
 .main-other-inner {width:940px; margin:0 auto; display:table}
@@ -305,6 +313,12 @@ a.btn:active {background:#000}
 .main-photo-name a {text-decoration:none}
 .main-photo-anonce {color:#000; padding:19px 0 0 0}
 .main-photo-date {color:#808080; padding:18px 0}
+.main-photo-date a {color:#808080}
+
+.main-video {display:table-cell; vertical-align:top; width:380px; padding:0 90px 0 0}
+
+.main-video .main-photo-img a {display:block; position:relative}
+.main-video .main-photo-img a span {display:block; width:90px; height:90px; position:absolute; left:50%; top:50%; margin:-45px 0 0 -45px; background:url(../images/video.png)}
 
 .main-about {width:940px; margin:0 auto; padding:53px 0 0 0; color:#000}
 .main-about:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -332,18 +346,26 @@ a.btn:active {background:#000}
 .articles-archive-title {float:right; text-transform:uppercase; font-weight:bold; color:#65c1e3; padding:18px 0 0 0}
 .articles-archive-title img {vertical-align:middle; margin:0 0 0 3px}
 
-.articles-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:-10px -10px 0 -10px}
+.articles-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:-10px -10px 40px -10px}
 .articles-item {position:relative; display:inline-block; vertical-align:top; background:#fff; width:260px; font-size:14px; line-height:18px; letter-spacing:0; padding:19px 20px 25px 20px; margin:19px 10px 0 10px; -webkit-box-shadow:0 0 5px rgba(252, 76, 2, .75); -moz-box-shadow:0 0 5px rgba(252, 76, 2, .75); box-shadow:0 0 5px rgba(252, 76, 2, .75)}
 .articles-item:hover {border:3px solid #fc4c02; padding:16px 17px 22px 17px}
 .articles-item-img {line-height:0}
 .articles-item-name {font-size:18px; font-weight:bold; padding:27px 11px 0 11px; text-transform:uppercase}
 .articles-item-name a {text-decoration:none}
 .articles-item-text {color:#000; padding:21px 11px 0 11px; font-size:12px}
+.articles-item-event-content .articles-item-text {font-size:14px}
+.articles-item-event-content .btn {height:44px; line-height:44px; margin:33px 0 0 0}
 .articles-item-tags {font-size:12px; color:#808080; padding:18px 11px 0 11px}
 .articles-item-current {position:absolute; left:0; top:-11px; width:100%; text-align:center; font-size:10px; line-height:20px; text-transform:uppercase; color:#fff}
 .articles-item:hover .articles-item-current {top:-14px}
 .articles-item-current div {display:inline-block; vertical-align:top; padding:0 11px; background:#fc4c02}
 .articles-item-title {color:#838383; font-size:12px; padding:18px 11px 0 11px; margin:0 0 -21px 0; text-transform:upperase}
+.articles-item-event-options {background:#eff9fc; color:#000; padding:25px 30px 20px 30px; position:relative; margin:24px -20px -25px -20px}
+.articles-item:hover .articles-item-event-options {margin:24px -17px -22px -17px; padding:25px 27px 17px 27px}
+.articles-item-event-date {padding:0 0 9px 25px; background:url(../images/articles-item-event-date.png) no-repeat left top}
+.articles-item-event-time {padding:0 0 9px 25px; background:url(../images/articles-item-event-time.png) no-repeat left top}
+.articles-item-event-place {padding:0 0 9px 25px; background:url(../images/articles-item-event-place.png) no-repeat left top}
+.articles-item-event-type {font-size:12px; color:#000; text-transform:uppercase; padding:19px 11px 0 11px; margin:0 0 -19px 0}
 
 .pager {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:40px 0 53px 0}
 .pager a {display:inline-block; vertical-align:middle; margin:0 0 0 3px; position:relative; width:28px; height:28px; background:#c0c0c0; color:#fff; text-align:center; line-height:28px; font-size:12px; letter-spacing:0; text-decoration:none; -moz-border-radius:14px; -webkit-border-radius:14px; border-radius:14px}
@@ -351,6 +373,8 @@ a.btn:active {background:#000}
 .pager a:hover {background:#000}
 .pager a.active {background:#000}
 .pager span {display:inline-block; width:16px; height:4px; background:url(../images/pager-sep.png); vertical-align:middle; margin:0 6px 0 9px}
+
+.other-news-wrap {background:#f6f9fa}
 
 .tags {border-top:5px solid #fc4c02; line-height:36px; width:940px; margin:5px auto 0 auto; padding:45px 0 50px 0}
 .tags h2 {font-size:36px; line-height:36px; margin:0; text-transform:uppercase; padding:13px 0 23px 0}
@@ -610,6 +634,31 @@ a.btn:active {background:#000}
 .clients-item.active {display:block}
 .clients-item div {display:inline-block; vertical-align:middle; width:140px; text-align:center; margin:26px 0 0 0}
 
+.biblio-headers {width:100%}
+.biblio-headers:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.biblio-headers h2 {float:left; font-size:36px; line-height:36px; margin:0 3px 0 0}
+.biblio-headers ul {float:left; margin:0; padding:0; list-style:none; line-height:36px; text-transform:uppercase}
+.biblio-headers ul li {float:left; margin:0 0 0 19px; padding:0}
+.biblio-headers ul li:after {display:none}
+
+.biblio-list {position:relative; margin:0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
+.biblio-item {display:inline-block; vertical-align:top; width:220px; margin:42px 10px 0 10px}
+.biblio-item-img {border:3px solid #65c1e3}
+.biblio-item-name {padding:22px 11px 0 11px; font-weight:bold; font-size:14px; line-height:18px; text-transform:uppercase; letter-spacing:0}
+.biblio-item-name a {text-decoration:none}
+.biblio-item-author {font-size:14px; line-height:18px; letter-spacing:0; color:#65c1e3; padding:9px 11px 0 11px}
+.biblio-item-anonce {padding:18px 11px 0 11px; font-size:14px; line-height:18px; letter-spacing:0}
+.biblio-item-review {font-size:14px; line-height:18px; letter-spacing:0; color:#b2dcec; padding:18px 11px 0 11px}
+
+.blog-list {position:relative; margin:0 -10px; font-size:0; line-height:0; letter-spacing:-1px; padding:0 0 58px 0}
+.blog-item {display:inline-block; vertical-align:top; width:300px; margin:0 10px; font-size:14px; line-height:18px; letter-spacing:0}
+.blog-item-img {line-height:0}
+.blog-item-name {text-transform:uppercase; font-size:18px; font-weight:bold; padding:28px 11px 0 11px}
+.blog-item-name a {text-decoration:none}
+.blog-item-anonce {color:#000; padding:18px 11px 0 11px}
+.blog-item-date {color:#8d8d8d; padding:18px 11px 0 11px}
+.blog-item-date a {color:#8d8d8d}
+
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
 .service-projects+.bottom,
@@ -698,6 +747,26 @@ footer {background:#f8f8f8; color:#000}
 .page-articles header a:active,
 .page-articles .bottom a:active,
 .page-articles footer a:active {color:#000}
+.page-articles .main-projects {background:#65c1e3}
+.page-articles .main-projects-item-type a {color:#fff}
+.page-articles .main-projects-item-name {font-weight:500; margin-bottom:24px}
+.page-articles .main-projects-prev  {background-position:left -265px}
+.page-articles .main-projects-next {background-position:-53px -265px}
+.page-articles .main-projects-prev:hover {background-position:left -53px}
+.page-articles .main-projects-next:hover {background-position:-53px -53px}
+.page-articles .main-projects-item-links a.btn {background:#77daff; color:#fff}
+.page-articles .main-projects-item-links a.btn:first-child {background:#fff; color:#65c1e3}
+.page-articles .main-projects-item-links a.btn:hover {background:#42abd9; color:#fff}
+.page-articles .main-projects-item-links a.btn:active {background:#1993ce; color:#fff}
+.page-articles .main-other-title a {color:#fff}
+.page-articles .main-news-item-date {color:#afbcc0}
+.page-articles .main-news-item-date a {color:#afbcc0}
+.page-articles .main-news+.main-news {border-right:none; padding:0 0 0 90px}
+.page-articles .main-photo-date a {color:#808080}
+.page-articles .main-photo-name,
+.page-articles .main-photo-anonce,
+.page-articles .main-photo-date {padding-left:11px; padding-right:11px}
+.page-articles .blog-item-date a {color:#8d8d8d}
 
 .page-about a {color:#e26362}
 .page-about a:hover {color:#d84040}
@@ -804,7 +873,7 @@ footer {background:#f8f8f8; color:#000}
 .page-projects .bottom a:active,
 .page-projects footer a:active {color:#000}
 .page-projects .video-list .articles-item {-webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none}
-.response-link a em {background-color:#983f6f}
+.page-projects .response-link a em {background-color:#983f6f}
 
 .page-services a {color:#65449b}
 .page-services a:hover {color:#422c78}
@@ -874,11 +943,6 @@ footer {background:#f8f8f8; color:#000}
 
 /*  ------------------------------------------- */
 
-.main-projects-item-options {font-weight:normal; font-size:14px; line-height:18px; text-transform:none; padding:12px 0 13px 0}
-.main-projects-item-option-date {display:inline-block; padding:0 39px 0 23px; background:url(../images/main-projects-item-option-1.png) no-repeat left center}
-.main-projects-item-option-time {display:inline-block; padding:0 43px 0 23px; background:url(../images/main-projects-item-option-2.png) no-repeat left center}
-.main-projects-item-option-place {display:inline-block; padding:0 0 0 17px; background:url(../images/main-projects-item-option-3.png) no-repeat left center}
-
 .page-404 {width:940px; margin:15px auto 79px auto; min-height:435px; background:url(../images/404.png) no-repeat center top}
 .page-404-title {text-align:center; font-weight:bold; font-size:24px; line-height:27px; padding:87px 0 0 0}
 .page-404-text {text-align:center; font-size:18px; line-height:27px; padding:2px 0 33px 0}
@@ -890,75 +954,6 @@ footer {background:#f8f8f8; color:#000}
 .page-404-item-name a:hover {color:#000}
 .page-404-item-anonce {padding:9px 0 0 0}
 
-
-.project-list h2 {font-size:36px; line-height:36px; margin:54px 0 0 0; color:#a5477a}
-.project-list h2 a {color:#a5477a}
-.project-list h2+h3 {font-size:24px; line-height:24px; color:#000; font-weight:normal; margin:22px 0 0 0}
-
-.exp-reviews {border-top:5px solid #a5477a; margin-top:60px}
-.exp-reviews h2 {font-size:36px; line-height:36px; margin:0; padding:54px 0 0 0; color:#a5477a}
-.exp-reviews h2 a {color:#a5477a}
-.exp-reviews h2+h3 {font-size:24px; line-height:24px; color:#000; font-weight:normal; margin:22px 0 0 0}
-
-.exp-reviews-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative}
-
-.content-inner .content {width:100%}
-
-.other-news-wrap {background:#f6f9fa}
-
-
-.project-video h2 {margin:0; padding:52px 0 0 0; font-size:36px; line-height:36px; color:#94406e}
-
-.infocentre-top {background:#65c1e3; color:#fff; position:relative; padding:16px 0 18px 0}
-.infocentre-top h1 {font-size:72px; line-height:72px; color:#fff; margin:12px 0 0 0}
-
-.infocentre-list {background:#eff9fc; padding:35px 0 0 0}
-
-.infocentre-media {padding:35px 0 45px 0}
-.infocentre-media-video {float:left; width:380px}
-.infocentre-video-preview {line-height:0}
-.infocentre-video-preview a {display:block; position:relative}
-.infocentre-video-preview a span {display:block; width:90px; height:90px; position:absolute; left:50%; top:50%; margin:-45px 0 0 -45px; background:url(../images/video.png)}
-.infocentre-media .main-other-title {padding:0 0 36px 0}
-.infocentre-video-name {font-size:18px; line-height:18px; font-weight:bold; text-transform:uppercase; letter-spacing:0; padding:19px 0 0 0}
-.infocentre-video-name a {color:#65c1e3; text-decoration:none}
-.infocentre-video-name a:hover {color:#000}
-.infocentre-video-anonce {color:#393939; padding:9px 0 0 0; font-size:14px; line-height:18px; letter-spacing:0}
-.infocentre-video-tags {font-size:14px; line-height:18px; padding:18px 0 0 0; letter-spacing:0; color:#808080}
-.infocentre-video-tags a {color:#808080 !important}
-
-.infocentre-biblio {border-top:5px solid #65c1e3; border-bottom:5px solid #65c1e3; padding:51px 0 53px 0}
-.biblio-headers {width:100%}
-.biblio-headers:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.biblio-headers h2 {float:left; color:#65c1e3; font-size:36px; line-height:36px; margin:0 3px 0 0}
-.biblio-headers h2 a {color:#65c1e3}
-.biblio-headers ul {float:left; margin:0; padding:0; list-style:none; line-height:36px; text-transform:uppercase}
-.biblio-headers ul li {float:left; margin:0 0 0 19px; padding:0; background:none}
-.biblio-headers ul li a {color:#65c1e3}
-
-.biblio-list {position:relative; margin:0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
-.biblio-item {display:inline-block; vertical-align:top; width:220px; margin:42px 10px 0 10px}
-.biblio-item-img {border:3px solid #65c1e3}
-.biblio-item-name {padding:22px 11px 0 11px; font-weight:bold; font-size:14px; line-height:18px; text-transform:uppercase; letter-spacing:0}
-.biblio-item-name a {color:#65c1e3; text-decoration:none}
-.biblio-item-name a:hover {color:#000}
-.biblio-item-author {font-size:14px; line-height:18px; letter-spacing:0; color:#65c1e3; padding:9px 11px 0 11px}
-.biblio-item-anonce {padding:18px 11px 0 11px; font-size:14px; line-height:18px; letter-spacing:0}
-.biblio-item-review {font-size:14px; line-height:18px; letter-spacing:0; color:#b2dcec; padding:18px 11px 0 11px}
-.biblio-item-review a {color:#65c1e3}
-
-.infocentre-blog {padding:51px 0 0 0}
-.infocentre-blog h2 {color:#65c1e3; font-size:36px; line-height:36px; margin:0}
-.infocentre-blog h2 a {color:#65c1e3}
-.blog-list {position:relative; margin:0 -10px; font-size:0; line-height:0; letter-spacing:-1px; padding:0 0 58px 0}
-.blog-item {display:inline-block; vertical-align:top; width:300px; margin:38px 10px 0 10px; font-size:14px; line-height:18px; letter-spacing:0}
-.blog-item-img {line-height:0}
-.blog-item-name {text-transform:uppercase; font-weight:bold; padding:28px 11px 0 11px}
-.blog-item-name a {color:#65c1e3; text-decoration:none}
-.blog-item-name a:hover {color:#000}
-.blog-item-anonce {color:#000; padding:18px 11px 0 11px}
-.blog-item-date {color:#8d8d8d; padding:18px 11px 0 11px}
-.blog-item-date a {color:#8d8d8d !important}
 
 .job-top {padding:64px 0 63px 0; background:url(../images/job-top.jpg); background-position:center; background-repeat:no-repeat; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover}
 .job-top-inner {width:900px; padding:29px 30px 33px 30px; margin:0 auto; background:#fff; font-size:24px; line-height:27px}

@@ -421,6 +421,38 @@ var timerSlider     = null;
                 var prevItem  = curBlock.find('.articles-item').eq(curIndex - 1);
                 var firstItem = curBlock.find('.articles-item').eq(curIndex - 2);
 
+                if (curItem.find('.articles-item-event-content').length > 0) {
+                    var curHeight = curItem.find('.articles-item-event-content').height();
+
+                    if (prevItem.find('.articles-item-event-content').height() > curHeight) {
+                        curHeight = prevItem.find('.articles-item-event-content').height();
+                    }
+
+                    if (firstItem.find('.articles-item-event-content').height() > curHeight) {
+                        curHeight = firstItem.find('.articles-item-event-content').height();
+                    }
+
+                    curItem.find('.articles-item-event-content').css({'min-height': curHeight});
+                    prevItem.find('.articles-item-event-content').css({'min-height': curHeight});
+                    firstItem.find('.articles-item-event-content').css({'min-height': curHeight});
+                }
+
+                if (curItem.find('.articles-item-event-options').length > 0) {
+                    var curHeight = curItem.find('.articles-item-event-options').height();
+
+                    if (prevItem.find('.articles-item-event-options').height() > curHeight) {
+                        curHeight = prevItem.find('.articles-item-event-options').height();
+                    }
+
+                    if (firstItem.find('.articles-item-event-options').height() > curHeight) {
+                        curHeight = firstItem.find('.articles-item-event-options').height();
+                    }
+
+                    curItem.find('.articles-item-event-options').css({'min-height': curHeight});
+                    prevItem.find('.articles-item-event-options').css({'min-height': curHeight});
+                    firstItem.find('.articles-item-event-options').css({'min-height': curHeight});
+                }
+
                 var curHeight = curItem.height();
 
                 if (prevItem.height() > curHeight) {
@@ -440,6 +472,28 @@ var timerSlider     = null;
                 var curItem   = curBlock.find('.articles-item:last');
                 var curIndex  = curBlock.find('.articles-item').index(curItem);
                 var prevItem  = curBlock.find('.articles-item').eq(curIndex - 1);
+
+                if (curItem.find('.articles-item-event-content').length > 0) {
+                    var curHeight = curItem.find('.articles-item-event-content').height();
+
+                    if (prevItem.find('.articles-item-event-content').height() > curHeight) {
+                        curHeight = prevItem.find('.articles-item-event-content').height();
+                    }
+
+                    curItem.find('.articles-item-event-content').css({'min-height': curHeight});
+                    prevItem.find('.articles-item-event-content').css({'min-height': curHeight});
+                }
+
+                if (curItem.find('.articles-item-event-options').length > 0) {
+                    var curHeight = curItem.find('.articles-item-event-options').height();
+
+                    if (prevItem.find('.articles-item-event-options').height() > curHeight) {
+                        curHeight = prevItem.find('.articles-item-event-options').height();
+                    }
+
+                    curItem.find('.articles-item-event-options').css({'min-height': curHeight});
+                    prevItem.find('.articles-item-event-options').css({'min-height': curHeight});
+                }
 
                 var curHeight = curItem.height();
 
