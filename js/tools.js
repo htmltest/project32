@@ -357,6 +357,21 @@ var timerSlider     = null;
             }
         });
 
+        // клиенты
+        $('.clients-menu a').click(function(e) {
+            var curLi = $(this).parent();
+
+            if (!curLi.hasClass('active')) {
+                var curIndex = $('.clients-menu li').index(curLi);
+                $('.clients-menu li.active').removeClass('active');
+                curLi.addClass('active');
+                $('.clients-item.active').removeClass('active');
+                $('.clients-item').eq(curIndex).addClass('active');
+            }
+
+            e.preventDefault();
+        });
+
     });
 
     $(window).bind('load resize', function() {
@@ -496,6 +511,51 @@ var timerSlider     = null;
                 curItem.css({'min-height': curHeight});
                 prevItem.css({'min-height': curHeight});
             }
+        });
+
+        $('.responses').each(function() {
+            var curBlock = $(this);
+
+            curBlock.find('.response').css({'min-height': 0});
+            curBlock.find('.response:nth-child(3n)').each(function() {
+                var curItem   = $(this);
+                var curIndex  = curBlock.find('.response').index(curItem);
+                var prevItem  = curBlock.find('.response').eq(curIndex - 1);
+                var firstItem = curBlock.find('.response').eq(curIndex - 2);
+
+                var curHeight = curItem.find('.response-text').height();
+
+                if (prevItem.find('.response-text').height() > curHeight) {
+                    curHeight = prevItem.find('.response-text').height();
+                }
+
+                if (firstItem.find('.response-text').height() > curHeight) {
+                    curHeight = firstItem.find('.response-text').height();
+                }
+
+                curItem.find('.response-text').css({'min-height': curHeight});
+                prevItem.find('.response-text').css({'min-height': curHeight});
+                firstItem.find('.response-text').css({'min-height': curHeight});
+            });
+
+            if (curBlock.find('.response').length % 3 == 2) {
+                var curItem   = curBlock.find('.response:last');
+                var curIndex  = curBlock.find('.response').index(curItem);
+                var prevItem  = curBlock.find('.response').eq(curIndex - 1);
+
+                var curHeight = curItem.find('.response-text').height();
+
+                if (prevItem.find('.response-text').height() > curHeight) {
+                    curHeight = prevItem.find('.response-text').height();
+                }
+
+                curItem.find('.response-text').css({'min-height': curHeight});
+                prevItem.find('.response-text').css({'min-height': curHeight});
+            }
+        });
+
+        $('.clients-menu ul li').each(function() {
+            $(this).find('a span').css({'border-top-width': $(this).height() / 2, 'border-bottom-width': $(this).height() / 2});
         });
 
     });

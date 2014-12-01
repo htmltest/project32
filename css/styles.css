@@ -578,6 +578,38 @@ a.btn:active {background:#000}
 .practice-clients {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:18px -20px}
 .practice-clients img {vertical-align:middle; margin:13px 20px}
 
+.responses {position:relative; margin:0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
+.response {display:inline-block; vertical-align:top; width:300px; margin:22px 10px 0 10px; font-size:14px; line-height:18px; letter-spacing:0}
+.response-top {padding:25px 20px 27px 20px; background:#fff; position:relative}
+.response-top:after {content:""; display:block; width:18px; height:16px; background:url(../images/response-arrow.png); position:absolute; left:24px; bottom:-16px}
+.response-link {text-transform:uppercase; line-height:28px; padding:26px 0 0 34px; position:relative}
+.response-link a {display:inline-block; position:relative; text-decoration:none}
+.response-link a em {display:block; position:absolute; left:-36px; top:50%; margin-top:-14px; width:28px; height:28px; background-position:center; background-repeat:no-repeat; -moz-border-radius:14px; -webkit-border-radius:14px; border-radius:14px}
+.response-link a.response-pdf-link em {background-image:url(../images/pdf.png)}
+.response-link a.response-video-link em {background-image:url(../images/video-link.png); background-position:11px center}
+.response-link a span {color:#d9afc6}
+.response-author {width:100%}
+.response-author:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.response-author-logo {float:left; line-height:0; width:60px; padding:30px 0 0 0; text-align:center}
+.response-author-text {margin:0 0 0 70px}
+.response-author-name {font-weight:bold; text-transform:uppercase; color:#983f6f; padding:29px 0 0 0}
+.response-author-post {font-size:12px; line-height:15px; padding:8px 0 0 0}
+
+.clients {width:100%; padding:0 0 60px 0}
+.clients:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.clients-menu {float:left; width:300px; text-transform:uppercase; padding:25px 0 0 0}
+.clients-menu ul {margin:0; padding:0; list-style:none}
+.clients-menu ul li {margin:0; padding:2px 0 0 0}
+.clients-menu ul li:after {display:none}
+.clients-menu ul li a {display:block; position:relative; background:#faf6f8; text-decoration:none; padding:10px 20px 8px 20px}
+.clients-menu ul li.active a {background:#983f6f; color:#fff}
+.clients-menu ul li a span {display:none; width:0; height:0; position:absolute; right:-10px; top:0; border-left:10px solid #983f6f; border-top:18px solid transparent; border-bottom:18px solid transparent}
+.clients-menu ul li.active a span {display:block}
+.clients-list {margin:0 0 0 310px; font-size:0; line-height:0; letter-spacing:-1px}
+.clients-item {display:none}
+.clients-item.active {display:block}
+.clients-item div {display:inline-block; vertical-align:middle; width:140px; text-align:center; margin:26px 0 0 0}
+
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
 .service-projects+.bottom,
@@ -738,7 +770,8 @@ footer {background:#f8f8f8; color:#000}
 .page-projects ul li:after {background-color:#983f6f}
 .page-projects ul li ul li:after {border-color:#983f6f}
 .page-projects .top-sale-item,
-.page-projects .articles-item {-webkit-box-shadow:0 0 5px rgba(152, 63, 111, .75); -moz-box-shadow:0 0 5px rgba(152, 63, 111, .75); box-shadow:0 0 5px rgba(152, 63, 111, .75)}
+.page-projects .articles-item,
+.page-projects .response-top {-webkit-box-shadow:0 0 5px rgba(152, 63, 111, .75); -moz-box-shadow:0 0 5px rgba(152, 63, 111, .75); box-shadow:0 0 5px rgba(152, 63, 111, .75)}
 .page-projects .top-sale-item:hover,
 .page-projects .articles-item:hover {border-color:#983f6f}
 .page-projects .articles-item-current div {background:#983f6f}
@@ -771,6 +804,7 @@ footer {background:#f8f8f8; color:#000}
 .page-projects .bottom a:active,
 .page-projects footer a:active {color:#000}
 .page-projects .video-list .articles-item {-webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none}
+.response-link a em {background-color:#983f6f}
 
 .page-services a {color:#65449b}
 .page-services a:hover {color:#422c78}

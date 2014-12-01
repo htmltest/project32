@@ -25,8 +25,7 @@ nav ul li:first-child a,
 .leaders-item,
 .about-pref-digital,
 .staff-item-img img,
+.response-top,
+.response-link a em,
 
-.job-item,
-.trainers-welcome,
-.trainers-welcome-link a,
-.trainers-welcome-photo img {behavior:url(./js/PIE.htc)}
+.job-item {behavior:url(./js/PIE.htc)}
