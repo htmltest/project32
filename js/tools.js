@@ -833,6 +833,107 @@ var timerSlider     = null;
             $(this).find('a span').css({'border-top-width': $(this).height() / 2, 'border-bottom-width': $(this).height() / 2});
         });
 
+        $('body').on('click', '.window-link', function(e) {
+            $.ajax({
+                url: $(this).attr('href'),
+                dataType: 'html',
+                cache: false
+            }).done(function(html) {
+                windowOpen(html);
+
+                $('.window:last .form-checkbox span input:checked').parent().addClass('checked');
+                $('.window:last .form-checkbox').click(function() {
+                    $(this).find('span').toggleClass('checked');
+                    $(this).find('input').prop('checked', $(this).find('span').hasClass('checked')).trigger('change');
+                });
+
+                $('.window:last .form-radio span input:checked').parent().addClass('checked');
+                $('.window:last .form-radio').click(function() {
+                    var curName = $(this).find('input').attr('name');
+                    $('.window:last .form-radio input[name="' + curName + '"]').parent().removeClass('checked');
+                    $(this).find('span').addClass('checked');
+                    $(this).find('input').prop('checked', true).trigger('change');
+                });
+
+                $('.window:last .form-select select').chosen({disable_search: true});
+
+                $('.window:last form').validate({
+                    submitHandler: function(form) {
+                        $('.window:last .loading').show();
+                        $.ajax({
+                            url: $(form).attr('action'),
+                            dataType: 'html',
+                            cache: false
+                        }).done(function(html) {
+                            windowClose();
+                            windowOpen(html);
+                        });
+                    }
+                });
+            });
+
+            e.preventDefault();
+        });
+
     });
+
+    // открытие окна
+    function windowOpen(contentWindow) {
+        var windowWidth     = $(window).width();
+        var windowHeight    = $(window).height();
+        var curScrollTop    = $(window).scrollTop();
+
+        if ($('.window').length == 0) {
+            $('body').css({'width': windowWidth, 'height': windowHeight, 'overflow': 'hidden'});
+            $(window).scrollTop(0);
+            $('.wrapper').css({'top': -curScrollTop});
+            $('.wrapper').data('scrollTop', curScrollTop);
+        }
+
+        $('body').append('<div class="window"><div class="window-overlay"></div><div class="window-container"><div class="window-content">' + contentWindow + '<a href="#" class="window-close"></a></div></div></div>')
+
+        if ($('.window:last .window-container').width() > windowWidth - 40) {
+            $('.window:last .window-container').css({'margin-left': 20, 'left': 'auto'});
+            $('.window:last .window-overlay').width($('.window:last .window-container').width() + 40);
+        } else {
+            $('.window:last .window-container').css({'margin-left': -$('.window:last .window-container').width() / 2});
+        }
+
+        if ($('.window:last .window-container').height() > windowHeight - 40) {
+            $('.window:last .window-container').css({'margin-top': 20, 'top': 'auto'});
+            $('.window:last .window-overlay').height($('.window:last .window-container').height() + 40);
+        } else {
+            $('.window:last .window-container').css({'margin-top': -$('.window:last .window-container').height() / 2});
+        }
+
+        $('.window:last .window-overlay').click(function() {
+            windowClose();
+        });
+
+        $('.window:last .window-close').click(function(e) {
+            windowClose();
+            e.preventDefault();
+        });
+
+        $('body').bind('keyup', keyUpBody);
+    }
+
+    // обработка Esc после открытия окна
+    function keyUpBody(e) {
+        if (e.keyCode == 27) {
+            windowClose();
+        }
+    }
+
+    // закрытие окна
+    function windowClose() {
+        $('.window:last').remove();
+        if ($('.window').length == 0) {
+            $('body').unbind('keyup', keyUpBody);
+            $('.wrapper').css({'top': 'auto'});
+            $('body').css({'width': 'auto', 'height': 'auto', 'overflow': 'visible'});
+            $(window).scrollTop($('.wrapper').data('scrollTop'));
+        }
+    }
 
 })(jQuery);

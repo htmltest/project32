@@ -30,5 +30,10 @@ nav ul li:first-child a,
 .popover,
 .item-gallery-prev,
 .item-gallery-next,
-
+.window-close,
+.form-radio span,
+.form-radio span em,
 .job-item {behavior:url(./js/PIE.htc)}
+
+.window-overlay,
+.loading-bg {filter:alpha(opacity=70)}

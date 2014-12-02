@@ -1,0 +1,66 @@
+<div class="content">
+    <h2>Регистрация на мероприятие</h2>
+    <div class="window-subtitle">«Интерактивные мероприятия для жителей москвы»</div>
+    <form action="windows/success.html" method="post">
+        <div class="form-row">
+            <div class="form-col">
+                <div class="form-label">Ваше Имя</div>
+                <div class="form-input"><input type="text" name="name" value="" class="required" /></div>
+            </div>
+            <div class="form-col">
+                <div class="form-label">Ваш телефон</div>
+                <div class="form-input"><input type="text" name="phone" value="" class="required" /></div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col-2">
+                <div class="form-label">Ваш E-mail</div>
+                <div class="form-input"><input type="text" name="email" value="" class="required email" /></div>
+            </div>
+            <div class="form-col-3">
+                <div class="form-label">Ваш Город</div>
+                <div class="form-select">
+                    <select name="city" data-placeholder="Выберите город">
+                        <option value=""></option>
+                        <option value="1">Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                        <option value="3">Вологда</option>
+                        <option value="4">Рязань</option>
+                        <option value="5">Казань</option>
+                        <option value="6">Владивосток</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label">ВЫберите опцию</div>
+            <div class="form-options">
+                <div class="form-radio"><span><input type="radio" name="option1" value="1" checked="checked" /><em></em></span>вариант 1</div>
+                <div class="form-radio"><span><input type="radio" name="option1" value="2" /><em></em></span>вариант 2</div>
+                <div class="form-radio"><span><input type="radio" name="option1" value="3" /><em></em></span>вариант 3</div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label">Ваши предпочтения</div>
+            <div class="form-options">
+                <div class="form-checkbox"><span><input type="radio" name="option2" checked="checked" /><em></em></span>Регби</div>
+                <div class="form-checkbox"><span><input type="radio" name="option3" /><em></em></span>Поло</div>
+                <div class="form-checkbox"><span><input type="radio" name="option4" /><em></em></span>Футбол</div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col-4">
+                <div class="form-label">Ваше сообщение</div>
+                <div class="form-input"><textarea name="message" rows="5" cols="10" class="required"></textarea></div>
+            </div>
+        </div>
+        <div class="form-submit"><input type="submit" value="Отправить заявку" /></div>
+    </form>
+    <div class="loading">
+        <div class="loading-bg"></div>
+        <div class="loading-inner">
+            <div class="loading-img"></div>
+            <div class="loading-text">Отправка данных</div>
+        </div>
+    </div>
+</div>
