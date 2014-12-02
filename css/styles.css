@@ -427,6 +427,9 @@ a.btn:active {background:#000}
 .video-list .articles-item-img a span {display:block; width:90px; height:90px; position:absolute; left:50%; top:50%; margin:-45px 0 0 -45px; background:url(../images/video.png)}
 
 .video-page-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:-10px -10px 38px -10px}
+.page-articles .video-page-list {margin-top:0}
+.photo-page-list {margin-bottom:0}
+.photo-detail-list {margin-bottom:0}
 .video-page-list .articles-item {width:300px; margin:0 0 7px 0; padding:10px 10px 25px 10px}
 .video-page-list .articles-item:hover {padding:7px 7px 22px 7px}
 .video-page-list .articles-item-img a {display:block; position:relative}
@@ -684,6 +687,31 @@ a.btn:active {background:#000}
 .events-inside-options-time {background:url(../images/events-inside-options-time.png) no-repeat left center}
 .events-inside-options-place {background:url(../images/events-inside-options-place.png) no-repeat 2px center}
 
+.item-gallery {position:fixed; left:-9999px; top:0; width:100%; height:100%; z-index:99997; overflow:auto; background:#000; background:rgba(0, 0, 0, .8)}
+.item-gallery-open {left:0}
+.item-gallery-container {position:relative; width:780px; margin:0 auto; padding:40px 0 0 0}
+.item-gallery-big {text-align:center; font-size:0; line-height:0; position:relative}
+.item-gallery-big strong {visibility:hidden; position:relative; display:inline-block; vertical-align:middle}
+.item-gallery-big strong img {vertical-align:top}
+.item-gallery-prev,
+.item-gallery-next {display:block; width:46px; height:46px; position:absolute; top:50%; margin-top:-23px; background:url(../images/item-gallery-arrows.png); -moz-border-radius:23px; -webkit-border-radius:23px; border-radius:23px}
+.item-gallery-prev {left:-75px}
+.item-gallery-next {right:-75px; background-position:-46px top}
+.item-gallery-big img {vertical-align:middle}
+.item-gallery-list {width:780px; margin:0 auto; line-height:0; height:110px; position:relative; overflow:hidden}
+.item-gallery-list ul {position:relative; margin:0; padding:35px 0; list-style:none; width:9999px}
+.item-gallery-list ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.item-gallery-list ul li {float:left; margin:0; padding:0; position:relative; width:80px}
+.item-gallery-list ul li img {position:relative}
+.item-gallery-list ul li span {display:none; position:absolute; left:0; top:0; width:54px; height:34px; border:3px solid #65c1e3}
+.item-gallery-list ul li.active span {display:block}
+.item-gallery-list-prev,
+.item-gallery-list-next {position:absolute; top:35px; display:block; width:54px; height:34px; background:url(../images/item-gallery-list-arrows.png); border:3px solid #65c1e3}
+.item-gallery-list-prev {left:0; background-position:left center}
+.item-gallery-list-next {right:0; background-position:-60px center}
+.item-gallery-loading {position:absolute; left:-15px; top:-15px; padding:15px; width:100%; height:100%; background:#000 url(../images/gallery-loading.gif) no-repeat center; background:rgba(0, 0, 0, .2) url(../images/gallery-loading.gif) no-repeat center}
+.item-gallery-load {position:absolute; left:-9999px; top:-9999px; visibility:hidden}
+
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
 .service-projects+.bottom,
@@ -796,6 +824,12 @@ footer {background:#f8f8f8; color:#000}
 .page-articles .reviews-item-text {-webkit-box-shadow:0 0 5px rgba(101, 193, 227, .75); -moz-box-shadow:0 0 5px rgba(101, 193, 227, .75); box-shadow:0 0 5px rgba(101, 193, 227, .75)}
 .page-articles .reviews-item-text:after {background:url(../images/review-arrow-articles.png)}
 .page-articles .video-page-list .articles-item {-webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none}
+.page-articles .item-gallery-prev,
+.page-articles .item-gallery-next {background-color:#65c1e3}
+.page-articles .item-gallery-prev:hover {background-color:#42abd9}
+.page-articles .item-gallery-prev:active {background-color:#1993ce}
+.page-articles .item-gallery-next:hover {background-color:#42abd9}
+.page-articles .item-gallery-next:active {background-color:#1993ce}
 
 .page-about a {color:#e26362}
 .page-about a:hover {color:#d84040}

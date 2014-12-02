@@ -28,5 +28,7 @@ nav ul li:first-child a,
 .response-top,
 .response-link a em,
 .popover,
+.item-gallery-prev,
+.item-gallery-next,
 
 .job-item {behavior:url(./js/PIE.htc)}
