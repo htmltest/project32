@@ -392,7 +392,7 @@ var timerSlider     = null;
                     if (curSlider.find('li').length < 11) {
                         curSlider.find('.item-gallery-list-next').css({'display': 'none'});
                     }
-                    curSlider.find('li').eq(11).css({'visibility': 'hidden'});
+                    curSlider.find('li').eq(9).css({'visibility': 'hidden'});
 
                     curSlider.find('ul').width(80 * curSlider.find('li').length);
                 });
@@ -442,7 +442,28 @@ var timerSlider     = null;
         $(window).bind('load resize', function() {
             var contentHeight   = $(window).height() - ($('.item-gallery-text').height() + $('.item-gallery-list').height());
             $('.item-gallery-big').css({'height': contentHeight, 'line-height': contentHeight + 'px'});
-            $('.item-gallery-big img').css({'max-height': contentHeight});
+
+            $('.item-gallery-big img').width('auto');
+            $('.item-gallery-big img').height('auto');
+
+            var curWidth = $('.item-gallery-big').width();
+            var curHeight = $('.item-gallery-big').height();
+
+            var imgWidth = $('.item-gallery-big img').width();
+            var imgHeight = $('.item-gallery-big img').height();
+
+            var newWidth = curWidth;
+            var newHeight = imgHeight * newWidth / imgWidth;
+
+            if (newHeight > curHeight) {
+                newHeight = curHeight;
+                newWidth = imgWidth * newHeight / imgHeight;
+            }
+
+            $('.item-gallery-big img').width(newWidth);
+            $('.item-gallery-big img').height(newHeight);
+
+            $('.item-gallery-big strong').height($('.item-gallery-big img').height());
         });
 
         $('.item-gallery').on('click', '.item-gallery-list ul li a', function(e) {
@@ -509,7 +530,7 @@ var timerSlider     = null;
                 curIndex = 0;
             }
             $('.item-gallery-list ul li').eq(curIndex).find('a').click();
-            if (curIndex > $('.item-gallery-list').data('curIndex') + 10) {
+            if (curIndex > $('.item-gallery-list').data('curIndex') + 8) {
                 $('.item-gallery-list-next').click();
             }
 
@@ -521,11 +542,11 @@ var timerSlider     = null;
 
             if (curSlider.data('disableAnimation')) {
                 var curIndex = curSlider.data('curIndex');
-                curIndex += 9;
+                curIndex += 8;
                 curSlider.find('.item-gallery-list-prev').css({'display': 'block'});
                 curSlider.find('li').css({'visibility': 'visible'});
-                if (curIndex >= curSlider.find('li').length - 9) {
-                    curIndex = curSlider.find('li').length - 9;
+                if (curIndex >= curSlider.find('li').length - 10) {
+                    curIndex = curSlider.find('li').length - 10;
                     curSlider.find('.item-gallery-list-next').css({'display': 'none'});
                 }
                 curSlider.find('li').eq(curIndex + 9).css({'visibility': 'hidden'});
@@ -549,7 +570,7 @@ var timerSlider     = null;
 
             if (curSlider.data('disableAnimation')) {
                 var curIndex = curSlider.data('curIndex');
-                curIndex -= 9;
+                curIndex -= 8;
                 curSlider.find('.item-gallery-list-next').css({'display': 'block'});
                 curSlider.find('li').css({'visibility': 'visible'});
                 if (curIndex <= 0) {
@@ -557,7 +578,7 @@ var timerSlider     = null;
                     curSlider.find('.item-gallery-list-prev').css({'display': 'none'});
                 }
                 curSlider.find('li').eq(curIndex).css({'visibility': 'hidden'});
-                curSlider.find('li').eq(curIndex + 10).css({'visibility': 'hidden'});
+                curSlider.find('li').eq(curIndex + 9).css({'visibility': 'hidden'});
                 if (curIndex == 0) {
                     curSlider.find('li').eq(curIndex).css({'visibility': 'visible'});
                 }

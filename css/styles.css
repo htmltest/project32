@@ -702,6 +702,7 @@ a.btn:active {background:#000}
 .item-gallery-list ul {position:relative; margin:0; padding:35px 0; list-style:none; width:9999px}
 .item-gallery-list ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .item-gallery-list ul li {float:left; margin:0; padding:0; position:relative; width:80px}
+.page-articles .item-gallery-list ul li:after {display:none}
 .item-gallery-list ul li img {position:relative}
 .item-gallery-list ul li span {display:none; position:absolute; left:0; top:0; width:54px; height:34px; border:3px solid #65c1e3}
 .item-gallery-list ul li.active span {display:block}
