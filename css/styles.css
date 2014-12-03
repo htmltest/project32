@@ -705,14 +705,25 @@ a.btn:active {background:#000}
 .biblio-headers ul li {float:left; margin:0 0 0 19px; padding:0}
 .biblio-headers ul li:after {display:none}
 
+.page-biblio {padding:0 0 58px 0}
 .biblio-list {position:relative; margin:0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
 .biblio-item {display:inline-block; vertical-align:top; width:220px; margin:42px 10px 0 10px}
 .biblio-item-img {border:3px solid #65c1e3}
+.biblio-item-type {text-transform:uppercase; font-size:12px; line-height:18px; letter-spacing:0; color:#000; margin:22px 11px -16px 11px}
 .biblio-item-name {padding:22px 11px 0 11px; font-weight:bold; font-size:14px; line-height:18px; text-transform:uppercase; letter-spacing:0}
+.page-biblio .biblio-item-name {font-size:18px}
 .biblio-item-name a {text-decoration:none}
 .biblio-item-author {font-size:14px; line-height:18px; letter-spacing:0; color:#65c1e3; padding:9px 11px 0 11px}
 .biblio-item-anonce {padding:18px 11px 0 11px; font-size:14px; line-height:18px; letter-spacing:0}
 .biblio-item-review {font-size:14px; line-height:18px; letter-spacing:0; color:#b2dcec; padding:18px 11px 0 11px}
+
+.biblio-menu {text-transform:uppercase; line-height:36px}
+.biblio-menu ul {width:100%; margin:0; padding:0; list-style:none}
+.biblio-menu ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.biblio-menu ul li {float:left; margin:0; padding:0 0 0 3px}
+.biblio-menu ul li:after {display:none}
+.biblio-menu ul li a {float:left; height:36px; padding:0 20px; background:#eff9fc}
+.page-articles .biblio-menu ul li.active a {color:#fff; text-decoration:none; background:#65c1e3}
 
 .blog-list {position:relative; margin:0 -10px; font-size:0; line-height:0; letter-spacing:-1px; padding:0 0 58px 0}
 .blog-item {display:inline-block; vertical-align:top; width:300px; margin:0 10px; font-size:14px; line-height:18px; letter-spacing:0}
@@ -768,6 +779,15 @@ a.btn:active {background:#000}
 .job-item:hover .job-item-link a.btn {margin:0 27px}
 
 a.btn-job {height:44px; line-height:44px; width:400px; margin:36px auto 6px auto}
+
+.library-detail-author {font-size:24px; line-height:27px; color:#65c1e3; margin:27px 0}
+
+.library-detail {width:100%}
+.library-detail:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.library-detail-img {line-height:0; float:right; width:280px}
+.library-detail-img img {border:3px solid #65c1e3}
+.library-detail-text {margin:0 340px 0 0}
+.library-detail .article-social {float:none}
 
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
