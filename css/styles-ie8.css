@@ -33,7 +33,8 @@ nav ul li:first-child a,
 .window-close,
 .form-radio span,
 .form-radio span em,
-.job-item {behavior:url(./js/PIE.htc)}
+.job-item,
+.blog-item-author-photo img {behavior:url(./js/PIE.htc)}
 
 .window-overlay,
 .loading-bg {filter:alpha(opacity=70)}

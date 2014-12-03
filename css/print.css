@@ -1,0 +1,20 @@
+* {color:#000 !important}
+a {color:#000 !important; text-decoration:none !important}
+
+.header-social,
+.header-lang,
+.header-contacts,
+.top,
+a.btn,
+.content-gallery-prev,
+.content-gallery-next,
+.bottom,
+.footer-menu,
+.footer-social,
+.pager,
+.project-news-ctrl,
+.tags,
+.main-other-title a {display:none !important}
+
+.breadcrumbs span img {display:none}
+.breadcrumbs span:after {content:"→"}

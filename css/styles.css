@@ -789,6 +789,28 @@ a.btn-job {height:44px; line-height:44px; width:400px; margin:36px auto 6px auto
 .library-detail-text {margin:0 340px 0 0}
 .library-detail .article-social {float:none}
 
+.blog-item-author {width:100%; position:relative; overflow:hidden; padding:0 0 4px 0}
+.blog-item-author-photo {float:left; width:54px; line-height:0; padding:2px 0 0 0; position:relative}
+.blog-item-author-photo img {position:relative; -moz-border-radius:27px; -webkit-border-radius:27px; border-radius:27px}
+.blog-item-author-text {margin:0 0 0 70px; font-size:12px}
+.blog-item-author-name {text-transform:uppercase; font-weight:bold; color:#65c1e3; padding:4px 0 0 0}
+.blog-item-author-name a {text-decoration:none}
+.blog-item-author-post {color:#000}
+
+.blog-detail-author {width:100%; background:#eff9fc; padding:23px 0 28px 0; margin:35px 0 50px 0}
+.blog-detail-author:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.blog-detail-author .blog-item-author-photo {padding-left:80px}
+.blog-detail-author .blog-item-author-text {margin:0 0 0 150px; font-size:14px}
+.blog-detail-author .blog-item-author-name {font-size:18px; padding:10px 0 0 0}
+
+.page-404 {width:940px; margin:15px auto 79px auto; min-height:435px; background:url(../images/404.png) no-repeat center top}
+.page-404-title {text-align:center; font-weight:bold; font-size:24px; line-height:36px; padding:65px 0 0 0; color:#fc4c02; text-transform:uppercase}
+.page-404-title span {font-size:36px; display:block}
+.page-404-text {text-align:center; font-size:18px; line-height:27px; padding:11px 0 49px 0; color:#000}
+.page-404-list {border-top:5px solid #fc4c02; position:relative}
+.page-404-list .leaders-list {background:none; padding:0}
+.page-404-list .leaders-item {background:none; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none}
+
 .bottom {width:940px; margin:0 auto; padding:50px 0 35px 0; background:url(../images/bottom.png) repeat-x; color:#000}
 .other-news+.bottom,
 .service-projects+.bottom,
@@ -1152,21 +1174,4 @@ footer {background:#f8f8f8; color:#000}
 .content-want-item {display:inline-block; width:300px; margin:0 10px; font-size:14px; line-height:18px; letter-spacing:0}
 
 .articles-item-tags a {color:#808080}
-
-
-
-
-
-
-/*  ------------------------------------------- */
-
-.page-404 {width:940px; margin:15px auto 79px auto; min-height:435px; background:url(../images/404.png) no-repeat center top}
-.page-404-title {text-align:center; font-weight:bold; font-size:24px; line-height:27px; padding:87px 0 0 0}
-.page-404-text {text-align:center; font-size:18px; line-height:27px; padding:2px 0 33px 0}
-.page-404-list {border-top:1px solid #e9e9e9; font-size:0; line-height:0; letter-spacing:-1px; position:relative}
-.page-404-list-inner {position:relative; margin:0 -10px}
-.page-404-item {display:inline-block; vertical-align:top; width:260px; padding:36px 30px 0 30px; font-size:12px; line-height:18px; letter-spacing:0}
-.page-404-item-name {text-transform:uppercase}
-.page-404-item-name a {text-decoration:none}
-.page-404-item-name a:hover {color:#000}
-.page-404-item-anonce {padding:9px 0 0 0}
+.blog-page-list .articles-item-tags a {color:#c0c0c0}
