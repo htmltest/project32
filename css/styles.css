@@ -33,6 +33,9 @@ header {position:relative; z-index:20; width:940px; margin:0 auto; color:#000}
 .header-contacts {float:right; padding:29px 68px 0 0; font-size:12px; line-height:15px}
 .header-contacts-value {font-size:14px; font-weight:bold; padding:1px 0 0 0}
 
+.header-contacts-link .window-link {text-decoration:none; background:url(../images/dots-4.png) repeat-x left bottom}
+.header-contacts-link .window-link:hover {background:none}
+
 .top {position:relative; margin:0 -20px 0; background:#c0c0c0; -moz-border-radius:13px; -webkit-border-radius:13px; border-radius:13px}
 .top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 
@@ -127,7 +130,7 @@ nav ul li.active a {background:#fff; color:#c0c0c0; z-index:1}
 
 .loading {display:none; position:absolute; left:0; top:0; width:100%; height:100%}
 .loading-bg {position:absolute; left:0; top:0; width:100%; height:100%; background:#fff; opacity:.7}
-.loading-inner {position:absolute; left:50%; top:50%; width:220px; height:125px; margin:-62px 0 0 -110px; background:#f8fbfc}
+.loading-inner {position:absolute; left:50%; top:50%; width:220px; height:125px; margin:-62px 0 0 -110px; background:#fff}
 .loading-img {text-align:center; line-height:0; margin:30px auto 0 auto; width:32px; height:32px; background:#fff url(../images/loading.gif)}
 .loading-text {text-align:center; padding:18px 0 0 0; color:#000}
 
