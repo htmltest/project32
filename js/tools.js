@@ -62,7 +62,7 @@ var timerSlider     = null;
 
                     curSlider.data('disableAnimation', false);
                     curSlider.find('.slider-item').eq(curIndex).css({'z-index': 2});
-                    curSlider.find('.slider-item').eq(newIndex).css({'z-index': 1}).show();
+                    curSlider.find('.slider-item').eq(newIndex).css({'z-index': 1, 'display': 'block'});
                     curSlider.find('.slider-item').eq(curIndex).fadeOut(speedSlider, function() {
                         curSlider.data('curIndex', newIndex);
                         curSlider.data('disableAnimation', true);
@@ -93,7 +93,7 @@ var timerSlider     = null;
 
                 curSlider.data('disableAnimation', false);
                 curSlider.find('.slider-item').eq(curIndex).css({'z-index': 2});
-                curSlider.find('.slider-item').eq(newIndex).css({'z-index': 1}).show();
+                curSlider.find('.slider-item').eq(newIndex).css({'z-index': 1, 'display': 'block'});
                 curSlider.find('.slider-item').eq(curIndex).fadeOut(speedSlider, function() {
                     curSlider.data('curIndex', newIndex);
                     curSlider.data('disableAnimation', true);
